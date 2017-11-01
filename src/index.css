@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #333;
+}
+
+body {
+	width: 90%;
+	max-width: 700px;
+	padding: 5vmin;
+	margin: 0 auto;
+	background-color: #fff;
+	font: 1.125rem sans-serif;
+	line-height: 1.5;
+}
+
+.Header__menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.Header__menu li {
+	list-style: none;
+	padding: 10px 15px;
+}
