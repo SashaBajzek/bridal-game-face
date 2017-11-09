@@ -9,7 +9,10 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
     "react-slick": "^0.15.4",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "smooth-scroll": "^12.1.5",
+    "smoothscroll": "SashaBajzek/smoothScroll#7884af3ee25690f0974f9e1c01015d9075afa255",
+    "waypoints": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

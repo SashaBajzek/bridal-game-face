@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => (
 	<header>
-		<h1>Bridal Game Face</h1>
+		<h1 className="Header__heading">Bridal Game Face</h1>
 		<ul className="Header__menu">
 			<li><Link to="/">Home</Link></li>
 			<li><Link to="/full-look">Full Look</Link></li>

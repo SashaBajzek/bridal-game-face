@@ -1,0 +1,68 @@
+.Carousel {
+	position: relative;
+}
+
+.Carousel__list {
+	display: flex;
+	list-style: none;
+	-webkit-overflow-scrolling: touch;
+	margin: 0;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	padding: 1em;
+	
+	/* Experimenting */
+	width: 600px;
+}
+
+.Carousel__item {
+	flex-shrink: 0;
+
+	
+	
+	/* Experimenting */
+	background-color: pink;
+	border: 1px solid black;
+	/*position: relative;
+	left: 0;*/
+	width: 550px;
+}
+
+.Carousel__item:last-child {
+	margin: 0;
+}
+
+.Carousel__target {
+	left: 0em;
+	position: relative;
+	border: solid 1px;
+	width:2px;
+}
+
+.Carousel figure {
+	width: 300px;
+	
+	/* Experimenting */
+	margin: 0;
+}
+
+.Carousel__arrow--prev,
+.Carousel__arrow--next {
+	bottom: 2em;
+	height: 3em;
+	position: absolute;
+}
+
+.Carousel__arrow--prev {
+	left: 1em;
+}
+
+.Carousel__arrow--next {
+	right: 1em;
+}
+
+
+@media screen and (min-width: 641px) {
+
+	
+}
