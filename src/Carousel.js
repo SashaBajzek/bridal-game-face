@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import 'waypoints/lib/noframework.waypoints.js';
 import smoothScroll from 'smoothscroll';
 import './Carousel.css';
-import arrowLeft from './arrow-left.svg';
-import arrowRight from './arrow-right.svg';
+import arrowLeft from './photos/Icons/Left-Arrow.svg';
+import arrowRight from './photos/Icons/Right-Arrow.svg';
 
 const items = [
 	{
@@ -49,8 +49,6 @@ class Carousel extends Component {
 		//target: what you want to scroll to
 		//context: scrolling context (optional, defaults to window, can be any HTMLElement Object)
 		//https://github.com/JeffreyATW/smoothScroll
-		console.log("Scrolling to:");
-		console.log(itemId);
 		smoothScroll(document.querySelector(`.Carousel__target--${itemId}`), undefined, undefined, document.querySelector('.Carousel__list'), 'horizontal');
 	}
 	
@@ -71,10 +69,6 @@ class Carousel extends Component {
 				handler: (direction) => {
 					if (direction === 'right') {
 						this.setItem(i);
-						console.log("Waypoint right set:");
-						console.log(i);
-						console.log("Context right:");
-						console.log(context);
 					}
 				},
 				horizontal: true,
@@ -87,10 +81,6 @@ class Carousel extends Component {
         handler: (direction) => {
           if (direction === 'left') {
             this.setItem(i);
-						console.log("Waypoint left set:");
-						console.log(i);
-						console.log("Context left:");
-						console.log(context);
           }
         },
         horizontal: true
@@ -98,8 +88,6 @@ class Carousel extends Component {
     });
 	}
 
-
-	
 	render() {
 		const { currentItem } = this.state;
 		
@@ -117,12 +105,12 @@ class Carousel extends Component {
 					))}
 				</ul>
 				{items[currentItem - 1] && 
-					<a href={items[currentItem - 1].id} onClick={this.goToItem(items[currentItem - 1].id)}>
+					<a href={`#${items[currentItem - 1].id}`} onClick={this.goToItem(items[currentItem - 1].id)}>
 						<img className="Carousel__arrow--prev" src={arrowLeft} alt="Previous cleansing step arrow"/>
 					</a>
 				}
 				{items[currentItem + 1] && 
-					<a href={items[currentItem + 1].id} onClick={this.goToItem(items[currentItem + 1].id)}>
+					<a href={`#${items[currentItem + 1].id}`} onClick={this.goToItem(items[currentItem + 1].id)}>
 						<img className="Carousel__arrow--next" src={arrowRight} alt="Next cleansing step arrow"/>
 					</a>
 				}
