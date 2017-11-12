@@ -2,35 +2,8 @@ import React, { Component } from 'react';
 import 'waypoints/lib/noframework.waypoints.js';
 import smoothScroll from 'smoothscroll';
 import './Carousel.css';
-import arrowLeft from './photos/Icons/Left-Arrow.svg';
-import arrowRight from './photos/Icons/Right-Arrow.svg';
-
-const items = [
-	{
-		id: 'cleanse-1',
-		name: 'First cleansing step',
-		description: 'Rub oil into dry skin to break down makeup',
-		image: './photos/CleanUp/Clean-Oil1.jpg'
-	},
-	{
-		id: 'cleanse-2',
-		name: 'Second cleansing step',
-		description: 'Wipe off with warm, wet towel',
-		image: './photos/CleanUp/Clean-Oil2.jpg'
-	},
-	{
-		id: 'cleanse-3',
-		name: 'Third cleansing step',
-		description: 'Having a Mulan moment',
-		image: './photos/CleanUp/Clean-Oil3.jpg'
-	},
-	{
-		id: 'cleanse-4',
-		name: 'Last cleansing step',
-		description: 'Makeup gone. Follow up with normal face soap',
-		image: './photos/CleanUp/Clean-Done.jpg'
-	}
-];
+import arrowLeft from '../../Photos/Icons/Left-Arrow.svg';
+import arrowRight from '../../Photos/Icons/Right-Arrow.svg';
 
 class Carousel extends Component {
 	state = {
@@ -59,7 +32,7 @@ class Carousel extends Component {
 		
 		const context = document.querySelector(`.Carousel__list`);
 		
-		items.forEach((item, i) => {
+		this.props.items.forEach((item, i) => {
 			const element = document.querySelector(`.Carousel__item--${item.id}`);
 	
 			
@@ -90,6 +63,7 @@ class Carousel extends Component {
 
 	render() {
 		const { currentItem } = this.state;
+		const { items } = this.props;
 		
 		return (
 			<div className="Carousel">
@@ -98,7 +72,7 @@ class Carousel extends Component {
 						<li className={`Carousel__item Carousel__item--${item.id}`} id={item.id} key={item.id}>
 							<div className={`Carousel__target Carousel__target--${item.id}`} />
 							<figure>
-								<img src={require(`${item.image}`)} alt={item.name} />
+								<img src={item.image} alt={item.name} />
 								<figcaption>{item.description}</figcaption>
 							</figure>
 						</li>

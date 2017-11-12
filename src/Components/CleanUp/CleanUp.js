@@ -1,6 +1,37 @@
 import React from 'react';
-//import ImageScroll from './ImageScroll';
-import Carousel from './Carousel';
+import Carousel from '../Carousel/Carousel';
+
+import cleanUp1 from './CleanUpPhotos/Clean-Oil1.jpg';
+import cleanUp2 from './CleanUpPhotos/Clean-Oil2.jpg';
+import cleanUp3 from './CleanUpPhotos/Clean-Oil3.jpg';
+import cleanUp4 from './CleanUpPhotos/Clean-Done.jpg';
+
+const items = [
+	{
+		id: 'cleanse-1',
+		name: 'First cleansing step',
+		description: 'Rub oil into dry skin to break down makeup',
+		image: cleanUp1
+	},
+	{
+		id: 'cleanse-2',
+		name: 'Second cleansing step',
+		description: 'Wipe off with warm, wet towel',
+		image: cleanUp2
+	},
+	{
+		id: 'cleanse-3',
+		name: 'Third cleansing step',
+		description: 'Having a Mulan moment',
+		image: cleanUp3
+	},
+	{
+		id: 'cleanse-4',
+		name: 'Last cleansing step',
+		description: 'Makeup gone. Follow up with normal face soap',
+		image: cleanUp4
+	}
+];
 
 const CleanUp = () => (
 	<div>
@@ -16,7 +47,7 @@ const CleanUp = () => (
 	
 		<h3>Here is what oil cleansing looks like (aka a great Halloween costume)</h3>
 
-		<Carousel />
+		<Carousel items={items} />
 		
 		<p>Usually, a little bit of mascara can still be around your eyes. Q-tips take care of that easily.</p>
 	</div>

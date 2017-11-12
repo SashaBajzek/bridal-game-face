@@ -26,9 +26,9 @@ class BeforeAfter extends Component {
 			<label>
 				<h4 className="image-compare__title">{product}</h4>
 				<div className="image-compare__images">
-					<img src={require(`${afterImg}`)} alt={`Face after ${product}`} />
+					<img src={afterImg} alt={`Face after ${product}`} />
 					<div className="image-compare__image--before" style={{width: imageWidth}}>
-						<img src={require(`${beforeImg}`)} alt={`Face after ${product}`} />		
+						<img src={beforeImg} alt={`Face after ${product}`} />		
 					</div>
 					<input type="range" min="0" max="100" value={this.state.value} name="image-slider" className="image-compare__image-slider" onChange={this.handleChange} />
 				</div>

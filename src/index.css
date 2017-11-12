@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'MagnoliaScript';
-  src:  url('./fonts/magnolia_script-webfont.woff2') format('woff2'),
-        url('./fonts/magnolia_script-webfont.woff') format('woff');
+  src:  url('./Fonts/magnolia_script-webfont.woff2') format('woff2'),
+        url('./Fonts/magnolia_script-webfont.woff') format('woff');
 }
 
 * {
@@ -10,7 +10,7 @@
 
 html {
 	background-color: #333;
-	background-image: url(./photos/Backgrounds/Chalkboard.jpg);
+	background-image: url(./Photos/Backgrounds/Chalkboard.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;

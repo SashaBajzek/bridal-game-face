@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Header from './Header';
-import Home from './Home';
-import FullLook from './FullLook';
-import NaturalLook from './NaturalLook';
-import CleanUp from './CleanUp';
-import Testing from './Testing';
+import Header from '../Header/Header';
+import Home from '../Home/Home';
+import FullLook from '../FullLook/FullLook';
+import NaturalLook from '../NaturalLook/NaturalLook';
+import CleanUp from '../CleanUp/CleanUp';
+import Testing from '../../Testing';
 
 class App extends Component {
   render() {
