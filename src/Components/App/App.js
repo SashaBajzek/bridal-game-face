@@ -5,7 +5,7 @@ import Home from '../Home/Home';
 import FullLook from '../FullLook/FullLook';
 import NaturalLook from '../NaturalLook/NaturalLook';
 import CleanUp from '../CleanUp/CleanUp';
-import Testing from '../../Testing';
+import Testing from '../Testing/Testing';
 
 class App extends Component {
   render() {

@@ -1,6 +1,7 @@
 import React from 'react';
 import BeforeAfter from '../BeforeAfter/BeforeAfter';
 import '../BeforeAfter/BeforeAfter.css';
+import EyelinerVideo from '../EyelinerVideo/EyelinerVideo';
 
 import OverallBefore from "./FullLookPhotos/F-Overall-Before.jpg";
 import OverallAfter from "./FullLookPhotos/F-Overall-After.jpg";
@@ -24,8 +25,6 @@ import BlacktrackAfter from "./FullLookPhotos/F-Blacktrack-After.jpg";
 import CarbonAfter from "./FullLookPhotos/F-Carbon-After.jpg";
 import MascaraAfter from "./FullLookPhotos/F-Mascara-After.jpg";
 import LinerAfter from "./FullLookPhotos/F-Liner-After.jpg";
-
-
 
 const steps = [
 	{
@@ -154,17 +153,14 @@ const steps = [
 		afterImg: OverallAfter,
 		description: "Lipstick"
 	}
-	
 ]
-
-
-
-
-
 
 const FullLook = () => (
 	<div className="fullLook">
 		<h2>Full Bridal Look</h2>
+	
+		<EyelinerVideo />
+	
 		<h3>Slide or use arrow keys to compare the before and after images</h3>
 	
 		<BeforeAfter product="overall" beforeImg= {OverallBefore} afterImg={OverallAfter} description="Putting on my bridal game face."/>

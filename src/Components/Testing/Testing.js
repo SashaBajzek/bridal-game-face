@@ -1,4 +1,12 @@
 import React from 'react';
+import StopMotion from '../StopMotion/StopMotion';
+import test1 from './TestingPhotos/IMG_6310.jpg';
+import test2 from './TestingPhotos/IMG_6312.jpg';
+import test3 from './TestingPhotos/IMG_6314.jpg';
+
+const photos = [
+	test1, test2, test3
+]
 
 const Testing = () => (
 	<div>
@@ -10,6 +18,7 @@ const Testing = () => (
 			<li>How does it look in different lighting (flash)?  Flash can really wash you out. For flash photography it is best to wear 15% heavier makeup than you think you need in person.  Adding more bronzer, blush, and brow products can help keep you looking balanced in photos.</li>
 			<li>How well does it match your neck? (you can see in my pictures that my face looks pink, but my neck looks yellow.  I could use a new foundation color.)</li>
 		</ul>
+		<StopMotion photos={photos} />
 	</div>
 );
 
