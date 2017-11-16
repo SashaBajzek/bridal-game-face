@@ -1,11 +1,22 @@
 import React from 'react';
 import StopMotion from '../StopMotion/StopMotion';
-import test1 from './TestingPhotos/IMG_6310.jpg';
-import test2 from './TestingPhotos/IMG_6312.jpg';
-import test3 from './TestingPhotos/IMG_6314.jpg';
+import test1 from './TestingPhotos/IMG_6349.jpg';
+import test2 from './TestingPhotos/IMG_6351.jpg';
+import test3 from './TestingPhotos/IMG_6352.jpg';
 
 const photos = [
-	test1, test2, test3
+	{
+		photo: test1,
+		description: "Test different lighting and angles"
+	},
+	{
+		photo: test2,
+		description: "Test different lighting and angles"
+	},
+	{
+		photo: test3,
+		description: "Test different lighting and angles"
+	}
 ]
 
 const Testing = () => (

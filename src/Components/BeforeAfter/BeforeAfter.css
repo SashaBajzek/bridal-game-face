@@ -1,26 +1,26 @@
-.image-compare {
-	margin: 40px auto;
+.BeforeAfter {
+	margin: 10px auto;
 	text-align: center;
-	width: 300px;
+	width: 200px;
 }
 
-.image-compare__title {
+.BeforeAfter__title {
 	text-transform: uppercase;
 }
 
-.image-compare__caption {
+.BeforeAfter__caption {
 	color: #666;
 	font-style: italic;
 	margin-top: 10px;
 }
 
-.image-compare__images {
+.BeforeAfter__images {
 	line-height: 0;
 	overflow: hidden;
 	position: relative;
 }
 
-.image-compare__image--before {
+.BeforeAfter__image--before {
 	box-shadow: 0 0 20px 0px rgba(0,0,0,0.7);
 	left: 0;
 	overflow: hidden;
@@ -28,14 +28,14 @@
 	top: 0;
 }
 
-.image-compare__image-slider {
+.BeforeAfter__image-slider {
 	cursor: ew-resize;
 	height: 100%;
 	left: -12px;
 	margin: 0;
 	position: absolute;
 	top: 0;
-	width: 324px;
+	width: 224px;
 	z-index: 2;
 }
 
@@ -49,29 +49,29 @@ Note that while we're repeating code here, that's necessary as you can't comma-s
 
 */
 
-.image-compare__image-slider {
+.BeforeAfter__image-slider {
   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
 	background: transparent; /* Otherwise white in Chrome */
-  width: 324px; /* Specific width is required for Firefox. */
+  width: 224px; /* Specific width is required for Firefox. */
 }
 
-.image-compare__image-slider::-webkit-slider-thumb {
+.BeforeAfter__image-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 
 /* I needed to add this to hide the track for Firefox */
-.image-compare__image-slider::-ms-track {
+.BeforeAfter__image-slider::-ms-track {
 	cursor: ew-resize;
-  width: 324px;
+  width: 224px;
   /* Hides the slider so custom styles can be added */
   background: transparent; 
   border-color: transparent;
   color: transparent;
 }
 
-.image-compare__image-slider::-moz-range-track {
+.BeforeAfter__image-slider::-moz-range-track {
 	cursor: ew-resize;
-  width: 324px;
+  width: 224px;
   /* Hides the slider so custom styles can be added */
   background: transparent; 
   border-color: transparent;
@@ -79,7 +79,7 @@ Note that while we're repeating code here, that's necessary as you can't comma-s
 }
 
 /* Special styling for WebKit/Blink */
-.image-compare__image-slider::-webkit-slider-thumb {
+.BeforeAfter__image-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
 	background: #6CAE75;
   border: 2px solid #BBDB9B;
@@ -91,13 +91,13 @@ Note that while we're repeating code here, that's necessary as you can't comma-s
   width: 24px;
 }
 
-.image-compare__image-slider:hover::-webkit-slider-thumb,
-.image-compare__image-slider:active::-webkit-slider-thumb {
+.BeforeAfter__image-slider:hover::-webkit-slider-thumb,
+.BeforeAfter__image-slider:active::-webkit-slider-thumb {
   border: 4px solid #BBDB9B;
 }
 
 /* All the same stuff for Firefox */
-.image-compare__image-slider::-moz-range-thumb {
+.BeforeAfter__image-slider::-moz-range-thumb {
 	background: #6CAE75;
   border: 2px solid #BBDB9B;
 	border-radius: 12px;
@@ -108,7 +108,7 @@ Note that while we're repeating code here, that's necessary as you can't comma-s
 }
 
 /* All the same stuff for IE */
-.image-compare__image-slider::-ms-thumb {
+.BeforeAfter__image-slider::-ms-thumb {
 	background: #ffffff;
 	border: 1px solid #000000;
 	border-radius: 12px;
@@ -116,4 +116,28 @@ Note that while we're repeating code here, that's necessary as you can't comma-s
   cursor: pointer;
   height: 24px;
 	width: 24px;
+}
+
+@media only screen and (min-width: 480px) {
+	.BeforeAfter {
+		margin: 40px auto;
+		width: 300px;
+	}
+
+	.BeforeAfter__image-slider {
+		width: 324px;
+	}
+
+	.BeforeAfter__image-slider {
+		width: 324px; /* Specific width is required for Firefox. */
+	}
+
+	/* I needed to add this to hide the track for Firefox */
+	.BeforeAfter__image-slider::-ms-track {
+		width: 324px;
+	}
+
+	.BeforeAfter__image-slider::-moz-range-track {
+		width: 324px;
+	}
 }

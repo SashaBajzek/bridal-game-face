@@ -34,179 +34,159 @@ import EyelinerVideo30 from './EyelinerVideoPhotos/IMG_6177.jpg';
 import EyelinerVideo31 from './EyelinerVideoPhotos/IMG_6178.jpg';
 import EyelinerVideo32 from './EyelinerVideoPhotos/IMG_6179.jpg';
 import EyelinerVideo33 from './EyelinerVideoPhotos/IMG_6180.jpg';
-import EyelinerVideo34 from './EyelinerVideoPhotos/IMG_6181.jpg';
-import EyelinerVideo35 from './EyelinerVideoPhotos/IMG_6182.jpg';
-import EyelinerVideo36 from './EyelinerVideoPhotos/IMG_6183.jpg';
-import EyelinerVideo37 from './EyelinerVideoPhotos/IMG_6184.jpg';
-import EyelinerVideo38 from './EyelinerVideoPhotos/IMG_6185.jpg';
-import EyelinerVideo39 from './EyelinerVideoPhotos/IMG_6186.jpg';
-import EyelinerVideo40 from './EyelinerVideoPhotos/IMG_6187.jpg';
-import EyelinerVideo41 from './EyelinerVideoPhotos/IMG_6189.jpg';
+import EyelinerVideo34 from './EyelinerVideoPhotos/IMG_6185.jpg';
+import EyelinerVideo35 from './EyelinerVideoPhotos/IMG_6186.jpg';
+import EyelinerVideo36 from './EyelinerVideoPhotos/IMG_6187.jpg';
+import EyelinerVideo37 from './EyelinerVideoPhotos/IMG_6189.jpg';
 
 const EyelinerVideoList = [
 	{
 		photo: EyelinerVideo1,
-		description: "outer: roots of lashes"
+		description: "Outer half of eye: apply at roots of lashes"
 	},
 	{
 		photo: EyelinerVideo2,
-		description: "outer: roots of lashes"
+		description: "Outer half of eye: apply at roots of lashes"
 	},
 	{
 		photo: EyelinerVideo3,
-		description: "outer: roots of lashes"
+		description: "Outer half of eye: apply at roots of lashes"
 	},
 	{
 		photo: EyelinerVideo4,
-		description: "outer: roots of lashes"
+		description: "Outer half of eye: apply at roots of lashes"
 	},
 	{
 		photo: EyelinerVideo5,
-		description: "outer: thicken line"
+		description: "Outer half of eye: thicken the line"
 	},
 	{
 		photo: EyelinerVideo6,
-		description: "outer: thicken line"
+		description: "Outer half of eye: thicken the line"
 	},
 	{
 		photo: EyelinerVideo7,
-		description: "outer: thicken line"
+		description: "Outer half of eye: thicken the line"
 	},
 	{
 		photo: EyelinerVideo8,
-		description: "outer: thicken line"
+		description: "Outer half of eye: thicken the line"
 	},
 	{
 		photo: EyelinerVideo9,
-		description: "outer: thicken line"
+		description: "Outer half of eye: thicken the line"
 	},
 	{
 		photo: EyelinerVideo10,
-		description: "outer: thicken line"
+		description: "Outer half of eye: thicken the line"
 	},
 	{
 		photo: EyelinerVideo11,
-		description: "outer: thicken line"
+		description: "Outer half of eye: thicken the line"
 	},
 	{
 		photo: EyelinerVideo12,
-		description: "inner corner: roots of lashes"
+		description: "Inner corner of eye: apply at roots of lashes"
 	},
 	{
 		photo: EyelinerVideo13,
-		description: "inner corner: roots of lashes"
+		description: "Inner corner of eye: apply at roots of lashes"
 	},
 	{
 		photo: EyelinerVideo14,
-		description: "inner corner: roots of lashes"
+		description: "Inner corner of eye: apply at roots of lashes"
 	},
 	{
 		photo: EyelinerVideo15,
-		description: "inner corner: roots of lashes"
+		description: "Inner corner of eye: apply at roots of lashes"
 	},
 	{
 		photo: EyelinerVideo16,
-		description: "inner corner: roots of lashes"
+		description: "Inner corner of eye: apply at roots of lashes"
 	},
 	{
 		photo: EyelinerVideo17,
-		description: "inner corner: thicken line"
+		description: "Inner corner of eye: thicken the line"
 	},
 	{
 		photo: EyelinerVideo18,
-		description: "inner corner: thicken line"
+		description: "Inner corner of eye: thicken the line"
 	},
 	{
 		photo: EyelinerVideo19,
-		description: "connect the sides"
+		description: "Connect the two sides"
 	},
 	{
 		photo: EyelinerVideo20,
-		description: "connect the sides"
+		description: "Connect the two sides"
 	},
 	{
 		photo: EyelinerVideo21,
-		description: "connect the sides"
+		description: "Connect the two sides"
 	},
 	{
 		photo: EyelinerVideo22,
-		description: "connect the sides"
+		description: "Connect the two sides"
 	},
 	{
 		photo: EyelinerVideo23,
-		description: "connect the sides"
+		description: "Connect the two sides"
 	},
 	{
 		photo: EyelinerVideo24,
-		description: "connect the sides"
+		description: "Connect the two sides"
 	},
 	{
 		photo: EyelinerVideo25,
-		description: "connect the sides"
+		description: "Connect the two sides"
 	},
 	{
 		photo: EyelinerVideo26,
-		description: "connect the sides"
+		description: "Connect the two sides"
 	},
 	{
 		photo: EyelinerVideo27,
-		description: "assess the shape"
+		description: "Assess the shape"
 	},
 	{
 		photo: EyelinerVideo28,
-		description: "make shape a smooth gradient"
+		description: "Make the shape a smooth gradient"
 	},
 	{
 		photo: EyelinerVideo29,
-		description: "make shape a smooth gradient: fixing outer transition by thickening more"
+		description: "Make the shape a smooth gradient: fixing outer transition by thickening more"
 	},
 	{
 		photo: EyelinerVideo30,
-		description: "make shape a smooth gradient: fixing outer transition by thickening more"
+		description: "Make the shape a smooth gradient: fixing outer transition by thickening more"
 	},
 	{
 		photo: EyelinerVideo31,
-		description: "make shape a smooth gradient: fixing outer transition by thickening more"
+		description: "Make the shape a smooth gradient: fixing outer transition by thickening more"
 	},
 	{
 		photo: EyelinerVideo32,
-		description: "make shape a smooth gradient: fixing outer transition by thickening more"
+		description: "Make the shape a smooth gradient: fixing outer transition by thickening more"
 	},
 	{
 		photo: EyelinerVideo33,
-		description: "make shape a smooth gradient: fixing outer transition by thickening more"
+		description: "Make the shape a smooth gradient: fixing outer transition by thickening more"
 	},
 	{
 		photo: EyelinerVideo34,
-		description: "make shape a smooth gradient: fixing outer transition by thickening more"
+		description: "Make the shape a smooth gradient: fixing inner transition"
 	},
 	{
 		photo: EyelinerVideo35,
-		description: "make shape a smooth gradient: fixing outer transition by thickening more"
+		description: "Make the shape a smooth gradient: fixing inner transition"
 	},
 	{
 		photo: EyelinerVideo36,
-		description: "make shape a smooth gradient: fixing outer transition by thickening more"
+		description: "Make the shape a smooth gradient: fixing inner transition"
 	},
 	{
 		photo: EyelinerVideo37,
-		description: "make shape a smooth gradient: fixing outer transition by thickening more"
-	},
-	{
-		photo: EyelinerVideo38,
-		description: "make shape a smooth gradient: fixing inner transition"
-	},
-	{
-		photo: EyelinerVideo39,
-		description: "make shape a smooth gradient: fixing inner transition"
-	},
-	{
-		photo: EyelinerVideo40,
-		description: "make shape a smooth gradient: fixing inner transition"
-	},
-	{
-		photo: EyelinerVideo41,
-		description: "gel liner done!"
+		description: "Gel eyeliner done!"
 	}
 ]
 

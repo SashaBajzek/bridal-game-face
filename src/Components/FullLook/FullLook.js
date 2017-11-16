@@ -1,7 +1,6 @@
 import React from 'react';
 import BeforeAfter from '../BeforeAfter/BeforeAfter';
 import '../BeforeAfter/BeforeAfter.css';
-import EyelinerVideo from '../EyelinerVideo/EyelinerVideo';
 
 import OverallBefore from "./FullLookPhotos/F-Overall-Before.jpg";
 import OverallAfter from "./FullLookPhotos/F-Overall-After.jpg";
@@ -158,8 +157,6 @@ const steps = [
 const FullLook = () => (
 	<div className="fullLook">
 		<h2>Full Bridal Look</h2>
-	
-		<EyelinerVideo />
 	
 		<h3>Slide or use arrow keys to compare the before and after images</h3>
 	
