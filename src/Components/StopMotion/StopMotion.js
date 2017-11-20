@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './StopMotion.css';
 
-import play from '../../Photos/Icons/Play.svg';
-import pause from '../../Photos/Icons/Pause.svg';
+import play from '../../Photos/Icons/Play-Button.svg';
+import pause from '../../Photos/Icons/Pause-Button.svg';
 
 //combine paused and rampUp
 
@@ -44,12 +44,15 @@ class StopMotion extends Component {
 	}
 
 	render() {
-		const { photos } = this.props;
+		const { photos, title } = this.props;
 		const { currentItem, videoState } = this.state;
 		return (
 			<div className="StopMotion">
-				<img className="StopMotion__image" onClick={this.advanceVideoState} src={photos[currentItem].photo} alt="Testing in different lighting" />
-				<button className={`StopMotion__toggle StopMotion__toggle--${videoState}`} onClick={this.advanceVideoState}>{videoState === "paused" ? <img className="StopMotion__play" src={play} alt="Play video"/> : <img className="StopMotion__pause" src={pause} alt="Pause video"/>}</button>
+				<h2 className="StopMotion__title">{title}</h2>
+				<div>
+					<img className="StopMotion__image" onClick={this.advanceVideoState} src={photos[currentItem].photo} alt="Testing in different lighting" />
+					<button className={`StopMotion__toggle StopMotion__toggle--${videoState}`} onClick={this.advanceVideoState}>{videoState === "paused" ? <img className="StopMotion__play" src={play} alt="Play video"/> : <img className="StopMotion__pause" src={pause} alt="Pause video"/>}</button>
+				</div>
 				<p className="StopMotion__description">{photos[currentItem].description}</p>
 			</div>
 		)

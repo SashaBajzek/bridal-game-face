@@ -192,8 +192,7 @@ const EyelinerVideoList = [
 
 const EyelinerVideo = () => (
 	<div className="Eyeliner Video">
-		<h2>Eyeliner Video</h2>
-		<StopMotion photos={ EyelinerVideoList } />
+		<StopMotion photos={ EyelinerVideoList } title="Eyeliner Step-By-Step" />
 	</div>
 );
 
