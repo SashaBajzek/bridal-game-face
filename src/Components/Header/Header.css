@@ -1,0 +1,40 @@
+/*
+Rose shades
+
+#cb0e40
+#bc4f5e
+#cb5382
+
+#470a0a
+#b21c0e
+*/
+
+.Header__heading {
+	color: #cb0e40;
+	display: block;
+	font-family: 'MagnoliaScript', 'Helvetica', sans-serif;
+	font-size: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.Header__menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.Header__menu li {
+	list-style: none;
+	padding: 10px 15px;
+}
+
+.Header__menu a {
+	color: black;
+	font-weight: bold;
+}
+
+.Header__menu a:focus,
+.Header__menu a:hover {
+	color: #bc4f5e;
+}

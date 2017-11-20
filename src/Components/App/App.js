@@ -6,12 +6,14 @@ import FullLook from '../FullLook/FullLook';
 import NaturalLook from '../NaturalLook/NaturalLook';
 import CleanUp from '../CleanUp/CleanUp';
 import Testing from '../Testing/Testing';
+import Footer from '../Footer/Footer';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
 			<Router>
-				<div>
+				<div className="App">
 					<Header />
 
 					<Route exact path="/" component={Home} />
@@ -19,6 +21,8 @@ class App extends Component {
 					<Route path="/natural-look" component={NaturalLook} />
 					<Route path="/clean-up" component={CleanUp} />
 					<Route path="/testing" component={Testing} />
+			
+					<Footer />
 				</div>
 			</Router>
     );

@@ -36,7 +36,7 @@ const items = [
 const CleanUp = () => (
 	<div>
 		<h2>Clean Up</h2>
-		<p>Since you don't normally wear makeup, it is good to be aware that you will need a separate makeup remover to take your waterproof bridal makeup off.</p>
+		<p>If you don't normally wear makeup, it is good to be aware that you will need a separate makeup remover to take your waterproof bridal makeup off.</p>
 		<p>Some options:</p>
 		<ul>
 			<li>Wipes:  They are like a baby wipe for your face (Options: <a href="https://www.amazon.com/Neutrogena-Makeup-Remover-Cleansing-Towelettes/dp/B00MLBPDQ2/ref=sr_1_4_s_it?s=beauty&ie=UTF8&qid=1509557884&sr=1-4&keywords=neutrogena%2Bmakeup%2Bremover&dpID=41r4DCx4yaL&preST=_SY300_QL70_&dpSrc=srch&th=1">Neutrogena</a>, <a href="https://www.amazon.com/Yes-Cucumbers-Soothing-Hypoallergenic-Facial/dp/B005FVSH0O/ref=sr_1_2_s_it?s=beauty&ie=UTF8&qid=1509557927&sr=1-2&keywords=yes+to+cucumber+makeup+remover&dpID=41baAeQ3uKL&preST=_SY300_QL70_&dpSrc=srch">Yes to Cucumber</a>, or <a href="https://www.amazon.com/Simple-Kind-Eyes-Makeup-Remover/dp/B00AO4EKSU/ref=sr_1_6_s_it?s=beauty&ie=UTF8&qid=1509557955&sr=1-6&keywords=simple+makeup+remover&dpID=41rZ3brtRZL&preST=_SY300_QL70_&dpSrc=srch">Simple</a>)</li>

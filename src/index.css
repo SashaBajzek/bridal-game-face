@@ -23,30 +23,18 @@ body {
 	line-height: 1.5;
 	margin: 0 auto;
 	max-width: 700px;
-	padding: 50px;
+	padding: 50px 50px 0;
 	width: 90%;	
 }
 
-.Header__menu {
-	display: flex;
-	justify-content: space-between;
-	padding: 0;
-}
-
-.Header__menu li {
-	list-style: none;
-	padding: 10px 15px;
-}
-
-.Header__heading {
-	font-family: 'MagnoliaScript', 'Helvetica', sans-serif;
-	font-size: 50px;
-	margin: 0 auto;
-	text-align: center;
+a {
+	color: #bc4f5e;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 @media only screen and (min-width: 480px) {
 	body {
-		padding: 20px;
+		padding: 20px 20px 0;
 	}
 }

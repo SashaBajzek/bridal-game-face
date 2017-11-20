@@ -1,0 +1,9 @@
+footer {
+	background-color: #cb5382;
+	margin: 0;
+}
+
+.Footer__copyright {
+	display: block;
+	text-align: center;
+}
