@@ -4,7 +4,10 @@ import './Home.css';
 
 const Home = () => (
 	<div className="Home">
-		<h1>Congratulations on your wedding! Are you ready to put your game face on?</h1>
+		<div className="hero">
+			<h1>Congratulations on your wedding!</h1>
+			<h2>Are you ready to put your game face on?</h2>
+		</div>
 		<p>This website is a tool to help you feel confident in your bridal makeup. Your bridal makeup should help you feel like the best version of yourself, not like you look like a completely different person.</p>
 		<p>Feel free to add or remove steps, and to change the colors! There are no rules in makeup, these are just tips to help get you started and learn more about the process.</p>
 		<h2>How to use this website</h2>
