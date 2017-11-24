@@ -4,16 +4,6 @@
 	width: 200px;
 }
 
-.BeforeAfter__title {
-	text-transform: uppercase;
-}
-
-.BeforeAfter__caption {
-	color: #666;
-	font-style: italic;
-	margin-top: 10px;
-}
-
 .BeforeAfter__images {
 	line-height: 0;
 	overflow: hidden;
