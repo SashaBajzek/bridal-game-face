@@ -9,11 +9,6 @@
 }
 
 html {
-	background-color: #333;
-	background-image: url(./Photos/Backgrounds/Chalkboard.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
 	overflow-x: hidden;
 }
 
@@ -24,7 +19,7 @@ body {
 	margin: 0 auto;
 	max-width: 700px;
 	padding: 50px 50px 0;
-	width: 90%;	
+	width: 100%;	
 }
 
 a {
@@ -34,7 +29,16 @@ a {
 }
 
 @media only screen and (min-width: 480px) {
+	html {
+		background-color: #333;
+		background-image: url(./Photos/Backgrounds/Chalkboard.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
 	body {
 		padding: 20px 20px 0;
+		width: 90%;	
 	}
 }

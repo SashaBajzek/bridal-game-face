@@ -157,7 +157,7 @@ const steps = [
 const FullLook = () => (
 	<div className="fullLook">
 		<h2>Full Bridal Look</h2>
-	
+		<p>Full Look shows from start to finish, how to apply a full face of makeup that will enhance your features.</p>
 		<h3>Slide or use arrow keys to compare the before and after images</h3>
 	
 		<BeforeAfter product="overall" beforeImg= {OverallBefore} afterImg={OverallAfter} description="Putting on my bridal game face."/>

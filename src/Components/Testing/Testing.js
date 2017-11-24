@@ -56,38 +56,46 @@ const Testing = () => (
 					<li>
 						<div>Black smudging or flakes under eyes?</div>
 						<div className="Testing__arrow">&#8594;</div>
-						<div>try a new waterproof or tubing mascara, or eyeliner</div>
+						<div>Try a new waterproof or tubing mascara, or eyeliner</div>
 					</li>
 					<li>
 						<div>Creasing on lids?</div>
 						<div className="Testing__arrow">&#8594;</div>
-						<div>try a new eyeshadow primer</div>
+						<div>Try a new eyeshadow primer</div>
 					</li>
 					<li>
 						<div>Shiny forhead?</div>
 						<div className="Testing__arrow">&#8594;</div>
-						<div>try a mattifying powder and pack blotting paper to touch up throughout the day</div>
+						<div>Try a mattifying powder and pack blotting paper to touch up throughout the day</div>
 					</li>
 					<li>
 						<div>Dry, crepey looking skin?</div>
 						<div className="Testing__arrow">&#8594;</div>
-						<div>try a dewy, moisturizing foundation and use setting powder sparingly, only to set your concealer and where you get oily. Also, try a dewy setting spray (like <a href="https://www.maccosmetics.com/product/13825/32212/products/skincare/primers/prep-prime-fix">MAC Fix+</a>)</div>
+						<div>Try a dewy, moisturizing foundation and use setting powder sparingly, only to set your concealer and where you get oily. Also, try a dewy setting spray (like <a href="https://www.maccosmetics.com/product/13825/32212/products/skincare/primers/prep-prime-fix">MAC Fix+</a>)</div>
 					</li>
 					<li>
 						<div>Makeup shifting on your skin?</div>
 						<div className="Testing__arrow">&#8594;</div>
-						<div>try a foundation primer or a setting spray. Primers (like <a href="https://www.sephora.com/product/veil-mineral-primer-P210575?skuId=1319193&icid2=products%20grid:p210575">Hourglass</a>) create a barrier between your skin oils and your makeup, preventing your skin from breaking down your makeup.  Setting sprays (like <a href="http://skindinavia.com/products/the-makeup-finishing-spray-bridal.html">Skindinavia Bridal</a>) help to lock everything in afterwards.
+						<div>Try a foundation primer or a setting spray. Primers (like <a href="https://www.sephora.com/product/veil-mineral-primer-P210575?skuId=1319193&icid2=products%20grid:p210575">Hourglass</a>) create a barrier between your skin oils and your makeup, preventing your skin from breaking down your makeup.  Setting sprays (like <a href="http://skindinavia.com/products/the-makeup-finishing-spray-bridal.html">Skindinavia Bridal</a>) help to lock everything in afterwards.
 						</div>
 					</li>
 				</ul>
 			</li>
-			<li><strong>How does it look in different lighting (flash)?</strong>
-				<ul>
-					<li>Flash can really wash you out. For flash photography it is best to wear 15% heavier makeup than you think you need in person.  Adding more bronzer, blush, and brow products can help keep you looking balanced in photos.</li>
-					<li>Do you have any strange white casts on your face in flash photos? White streaks on your face that only show up in flash can come from setting powder products high in silica or in skincare or foundations that have a high SPF. Test out a different powder and skip your sunscreen on your wedding day if you are having white cast issues.</li>
+			<li><strong>How does it look in different lighting (especially flash)?</strong>
+				<ul className="Testing__sublist">
+					<li>
+						<div>Is flash washing you out?</div>
+						<div className="Testing__arrow">&#8594;</div>
+						<div>For flash photography it is best to wear 15% heavier makeup than you think you need in person.  Adding more bronzer, blush, and brow products can help keep you looking balanced in photos.</div>
+					</li>
+					<li>
+						<div>Do you have any strange white casts on your face in flash photos?</div>
+						<div className="Testing__arrow">&#8594;</div>
+						<div>Flash back can be caused by setting powders high in silica or by products that have a high SPF. Try using a lighter layer of setting powder, or a different one with less silica.  Also, skip your high SPF sunscreen on your wedding day, keeping it under 20 SPF.</div>
+					</li>
 				</ul>
 			</li>
-			<li><strong>How well does it match your neck?</strong> If you buy your foundation for your wedding and then get a tan closer to your day, you will need to adjust your foundation color to match your new skintone. Always check that your foundation matches your neck and blend some foundation down your neck to make sure it is seamless.</li>
+			<li><strong>How well does your foundation match your neck?</strong> If you buy your foundation for your wedding and then get a tan closer to your day, you will need to adjust your foundation color to match your new skintone. Always check that your foundation matches your neck and blend some foundation down your neck to make sure it is seamless.</li>
 		</ul>
 		<StopMotion photos={photos} />
 	</div>

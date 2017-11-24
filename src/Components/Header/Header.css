@@ -13,15 +13,32 @@ Rose shades
 	color: #cb0e40;
 	display: block;
 	font-family: 'MagnoliaScript', 'Helvetica', sans-serif;
-	font-size: 50px;
+	font-size: 30px;
 	margin: 0 auto;
 	text-align: center;
 }
 
 .Header__menu {
+	background-color: white;
+	bottom: 0;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	height: 100vh;
+	left: 0;
 	padding: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 100px;
+	transform: translateX(100vw);
+	transition: transform 1s ease;
+	width: 100vw;
+	z-index: 2;
+}
+
+.menuOpen .Header__menu {
+	transform: translateX(0);
+	transition: transform 1s ease;
 }
 
 .Header__menu li {
@@ -29,12 +46,34 @@ Rose shades
 	padding: 10px 15px;
 }
 
-.Header__menu a {
+.Header__link {
 	color: black;
 	font-weight: bold;
 }
 
 .Header__menu a:focus,
-.Header__menu a:hover {
+.Header__menu a:hover,
+.Header__link--active {
 	color: #bc4f5e;
+}
+
+
+@media (min-width: 480px) {
+	.Header__heading {
+		font-size: 50px;
+	}
+	
+	.Header__menu {
+		flex-direction: row;
+		height: 60px;
+		justify-content: space-between;
+		position: static;
+		transform: translateX(0); /*Just in case menu toggle is set*/
+		width: 100%;
+	}
+	
+	.hamburger {
+		display: none;
+	}
+	
 }
