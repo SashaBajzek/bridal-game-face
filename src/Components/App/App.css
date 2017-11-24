@@ -1,0 +1,26 @@
+/*
+Rose shades
+
+#cb0e40
+#bc4f5e
+#cb5382
+
+#470a0a
+#b21c0e
+*/
+
+main {
+	margin-top: 45px;
+}
+
+a {
+	color: #bc4f5e;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+@media (min-width: 640px) {
+	main {
+		margin-top: 155px;
+	}
+}

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => (
-	<div className="Home">
+	<main className="Home">
 		<div className="hero">
 			<h1>Congratulations on your wedding!</h1>
 			<h2>Are you ready to put your game face on?</h2>
@@ -14,7 +14,7 @@ const Home = () => (
 		<p>I created two bridal looks for you to start with: full look and natural look. <Link to="/full-look">Full Look</Link> shows from start to finish, how to apply a full face of makeup that will enhance your features. <Link to="/natural-look">Natural Look</Link> is the bare minimum for looking polished on your wedding day and was created for those who do not like the look of makeup on their face at all.</p>
 		<p>It is important to do a trial run of your chosen bridal makeup in order to test how it looks in different lighting conditions so you have no surprises later when you view your wedding photos.  The <Link to="/testing">Testing</Link> section goes over what to test.</p>
 		<p>Waterproof eye makeup is essential for brides as you don't want your makeup to budge if you sweat or cry tears of joy.  Waterproof makeup can be hard to wash off if you have not used it before.  The <Link to="/clean-up">Clean Up</Link> section shows you how to remove it.</p>
-	</div>
+	</main>
 );
 
 export default Home;

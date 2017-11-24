@@ -1,6 +1,12 @@
 footer {
-	background-color: #cb5382;
+	background-color: #470a0a;
+	bottom: 0;
+	color: #FFE4E1;
+	left: 0;
 	margin: 0;
+	padding: 4px 0;
+	position: absolute;
+	right: 0;
 }
 
 .Footer__copyright {

@@ -34,7 +34,7 @@ const items = [
 ];
 
 const CleanUp = () => (
-	<div>
+	<main>
 		<h2>Clean Up</h2>
 		<p>If you don't normally wear makeup, it is good to be aware that you will need a separate makeup remover to take your waterproof bridal makeup off.</p>
 		<p>Some waterproof makeup remover options:</p>
@@ -51,7 +51,7 @@ const CleanUp = () => (
 
 		<Carousel items={items} />
 
-	</div>
+	</main>
 );
 
 export default CleanUp;

@@ -14,23 +14,17 @@ html {
 
 body {
 	background-color: #fff;
-	font: 1em sans-serif;
+	font-family: 'Helvetica Neue', sans-serif;
 	line-height: 1.5;
 	margin: 0 auto;
 	max-width: 700px;
-	padding: 50px 50px 0;
+	padding: 20px;
+	position: relative;
 	width: 100%;	
 }
 
-a {
-	color: #bc4f5e;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 640px) {
 	html {
-		background-color: #333;
 		background-image: url(./Photos/Backgrounds/Chalkboard.jpg);
 		background-attachment: fixed;
 		background-repeat: no-repeat;
@@ -38,7 +32,6 @@ a {
 	}
 	
 	body {
-		padding: 20px 20px 0;
-		width: 90%;	
+		padding: 0 40px 40px;
 	}
 }

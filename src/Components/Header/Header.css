@@ -1,13 +1,14 @@
-/*
-Rose shades
-
-#cb0e40
-#bc4f5e
-#cb5382
-
-#470a0a
-#b21c0e
-*/
+header {
+	background-color: white;
+	left: 0;
+	margin: 0 auto;
+	max-width: 700px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
 
 .Header__heading {
 	color: #cb0e40;
@@ -25,11 +26,12 @@ Rose shades
 	flex-direction: column;
 	height: 100vh;
 	left: 0;
+	margin: 0;
 	padding: 0;
 	position: absolute;
 	right: 0;
 	text-align: center;
-	top: 100px;
+	top: 45px;
 	transform: translateX(100vw);
 	transition: transform 1s ease;
 	width: 100vw;
@@ -57,8 +59,73 @@ Rose shades
 	color: #bc4f5e;
 }
 
+/* Menu Closed */
+.hamburger {
+	background-color: $white;
+	border-bottom: 3px solid #cb0e40;
+	border-left: none;
+	border-right: none;
+	border-top: 3px solid #cb0e40;
+	border-radius: 0;
+	display: block;
+	height: 17px;
+	outline: none;
+	position: absolute;
+	right: 20px;
+	text-indent: 100vw; /*Push menu text off of screen*/
+	top: 10px;
+	white-space: nowrap;
+	width: 30px;
+}
 
-@media (min-width: 480px) {
+.menuClosed .hamburger::before,
+.menuClosed .hamburger::after {
+	background: #cb0e40;
+	content: "";
+	height: 3px;
+	left: 0px;
+	position: absolute;
+	top: 4px;
+	transform: rotate(0);
+	transition: transform 0.25s, background .5s;
+	width: 100%;	
+}
+
+
+/* Menu Open */
+.menuOpen .hamburger {
+	border: none;
+}
+
+.menuOpen .hamburger:before,
+.menuOpen .hamburger:after {
+	background: #cb0e40;
+	content: "";
+	height: 3px;
+	left: 0px;
+	position: absolute;
+	top: 7px;
+	width: 100%;	
+}
+
+.menuOpen .hamburger:before {
+	transform: rotate(-45deg);
+	transition: transform 0.25s;
+}
+
+.menuOpen .hamburger:after {
+	transform: rotate(45deg);
+	transition: transform 0.25s;
+}
+
+
+
+@media (min-width: 640px) {
+	header {
+		padding: 20px 40px 0;
+		width: 90%;
+	}
+	
 	.Header__heading {
 		font-size: 50px;
 	}
@@ -67,6 +134,7 @@ Rose shades
 		flex-direction: row;
 		height: 60px;
 		justify-content: space-between;
+		margin: 0;
 		position: static;
 		transform: translateX(0); /*Just in case menu toggle is set*/
 		width: 100%;

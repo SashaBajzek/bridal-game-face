@@ -95,7 +95,7 @@ const steps = [
 
 
 const NaturalLook = () => (
-	<div className="naturalLook">
+	<main className="naturalLook">
 		<h2>Natural Bridal Look</h2>
 		<p>Natural Look is the bare minimum for looking polished on your wedding day. It is a great look for those who do not like the look of makeup on their face at all.</p>
 		<h3>Slide or use arrow keys to compare the before and after images</h3>
@@ -106,7 +106,7 @@ const NaturalLook = () => (
 			<BeforeAfter key={step.id} product={step.id} beforeImg={step.beforeImg} afterImg={step.afterImg} description={step.description}/>
 		)}
 
-	</div>
+	</main>
 );
 
 export default NaturalLook;

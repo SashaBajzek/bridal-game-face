@@ -46,7 +46,7 @@ const photos = [
 ]
 
 const Testing = () => (
-	<div>
+	<main>
 		<h2>Testing</h2>
 		<p>It is important to do a makeup trial before your wedding so you can test it. Wear the look for the day, checking up on how well it wears and if it irritates your skin in any way.  You don't want any surprises on your actual wedding day.</p>
 		<h3>Some things to test:</h3>
@@ -98,7 +98,7 @@ const Testing = () => (
 			<li><strong>How well does your foundation match your neck?</strong> If you buy your foundation for your wedding and then get a tan closer to your day, you will need to adjust your foundation color to match your new skintone. Always check that your foundation matches your neck and blend some foundation down your neck to make sure it is seamless.</li>
 		</ul>
 		<StopMotion photos={photos} />
-	</div>
+	</main>
 );
 
 export default Testing;
