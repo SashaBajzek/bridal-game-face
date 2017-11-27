@@ -22,5 +22,6 @@ a {
 @media (min-width: 640px) {
 	main {
 		margin-top: 155px;
+		padding-top: 10px;
 	}
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import BeforeAfter from '../BeforeAfter/BeforeAfter';
-import '../BeforeAfter/BeforeAfter.css';
+import './NaturalLook.css';
 
 import OverallBefore from './NaturalLookPhotos/Overall-Before.jpg';
 import OverallAfter from './NaturalLookPhotos/Finished2.jpg';
@@ -102,8 +102,14 @@ const NaturalLook = () => (
 	
 		<BeforeAfter product="overall" beforeImg={OverallBefore} afterImg={OverallAfter} description="Putting on my 'natural' bridal game face."/>
 	
-		{steps.map(step => 
-			<BeforeAfter key={step.id} product={step.id} beforeImg={step.beforeImg} afterImg={step.afterImg} description={step.description}/>
+		{steps.map(step => (
+			<section key={step.id} >
+				<h3 className="NaturalLook__heading">{step.id}</h3>
+				<BeforeAfter product={step.id} beforeImg= {step.beforeImg} afterImg={step.afterImg} description={step.description}/>
+				<p>{step.description}</p>
+				{step.video ? <step.video /> : ""}
+			</section>
+		)
 		)}
 
 	</main>

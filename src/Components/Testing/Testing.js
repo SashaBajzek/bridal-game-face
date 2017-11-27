@@ -79,6 +79,12 @@ const Testing = () => (
 						<div>Try a foundation primer or a setting spray. Primers (like <a href="https://www.sephora.com/product/veil-mineral-primer-P210575?skuId=1319193&icid2=products%20grid:p210575">Hourglass</a>) create a barrier between your skin oils and your makeup, preventing your skin from breaking down your makeup.  Setting sprays (like <a href="http://skindinavia.com/products/the-makeup-finishing-spray-bridal.html">Skindinavia Bridal</a>) help to lock everything in afterwards.
 						</div>
 					</li>
+					<li>
+						<div>Unruly Brows?</div>
+						<div className="Testing__arrow">&#8594;</div>
+						<div>Tame unruly brows with a brow gel (like <a href="https://www.sephora.com/product/brow-gel-P69304?skuId=1012855&icid2=products%20grid:p69304">Anastasia Beverly Hills Brow Gel</a>). Comb through your brows with the wand in an upward and outward motion, and once the gel sets, your brows will stay in place all day.
+						</div>
+					</li>
 				</ul>
 			</li>
 			<li><strong>How does it look in different lighting (especially flash)?</strong>

@@ -1,6 +1,29 @@
 import React from 'react';
 import BeforeAfter from '../BeforeAfter/BeforeAfter';
-import '../BeforeAfter/BeforeAfter.css';
+import './FullLook.css';
+
+import ConcealerVideo from '../Videos/ConcealerVideo/ConcealerVideo';
+import HighlightVideo from '../Videos/HighlightVideo/HighlightVideo';
+import BrowVideo from '../Videos/BrowVideo/BrowVideo';
+import PowderVideo from '../Videos/PowderVideo/PowderVideo';
+import BronzerVideo from '../Videos/BronzerVideo/BronzerVideo';
+import BlushVideo from '../Videos/BlushVideo/BlushVideo';
+import PeachVideo from '../Videos/PeachVideo/PeachVideo';
+import LightBrownVideo from '../Videos/LightBrownVideo/LightBrownVideo';
+import PinkVideo from '../Videos/PinkVideo/PinkVideo';
+import OrbVideo from '../Videos/OrbVideo/OrbVideo';
+import TanVideo from '../Videos/TanVideo/TanVideo';
+import ChampagneVideo from '../Videos/ChampagneVideo/ChampagneVideo';
+import GoldVideo from '../Videos/GoldVideo/GoldVideo';
+import ChampagnePopVideo from '../Videos/ChampagnePopVideo/ChampagnePopVideo';
+import LightBrownUnderVideo from '../Videos/LightBrownUnderVideo/LightBrownUnderVideo';
+import DarkBrownUnderVideo from '../Videos/DarkBrownUnderVideo/DarkBrownUnderVideo';
+import EyelinerVideo from '../Videos/EyelinerVideo/EyelinerVideo';
+import CarbonVideo from '../Videos/CarbonVideo/CarbonVideo';
+import MascaraVideo from '../Videos/MascaraVideo/MascaraVideo';
+import LipLinerVideo from '../Videos/LipLinerVideo/LipLinerVideo';
+import LipstickVideo from '../Videos/LipstickVideo/LipstickVideo';
+
 
 import OverallBefore from "./FullLookPhotos/F-Overall-Before.jpg";
 import OverallAfter from "./FullLookPhotos/F-Overall-After.jpg";
@@ -14,6 +37,7 @@ import HighlightAfter from "./FullLookPhotos/F-Highlight-After.jpg";
 import PeachAfter from "./FullLookPhotos/F-Peach-After.jpg";
 import BeachesAfter from "./FullLookPhotos/F-Beaches-After.jpg";
 import PinkAfter from "./FullLookPhotos/F-Pink-After.jpg";
+import OrbAfter from "./FullLookPhotos/F-Orb-After.jpg";
 import TanAfter from "./FullLookPhotos/F-Tan-After.jpg";
 import ChampagneAfter from "./FullLookPhotos/F-AllThatGlitters-After.jpg";
 import ChampagnePopAfter from "./FullLookPhotos/F-ChampagnePop-After.jpg";
@@ -36,121 +60,148 @@ const steps = [
 		id: "Concealer",
 		beforeImg: FoundationAfter,
 		afterImg: ConcealerAfter,
-		description: "Concealer brightens dark undereye circles and better covers blemishes."
+		description: "Concealer brightens dark undereye circles and better covers blemishes.",
+		video: ConcealerVideo
 	},
 	{
 		id: "Powder",
 		beforeImg: ConcealerAfter,
 		afterImg: PowderAfter,
-		description: "Powder eliminates shine from oily skin and sets foundation/concealer."
+		description: "Powder eliminates shine from oily skin and sets foundation/concealer.",
+		video: PowderVideo
 	},
 	{
 		id: "Brows",
 		beforeImg: PowderAfter,
 		afterImg: BrowsAfter,
-		description: "Filling in brows gives them more definition in flash photos."
+		description: "Filling in brows gives them more definition in flash photos.",
+		video: BrowVideo
 	},
 	{
 		id: "Bronzer",
-		beforeImg: OverallAfter,
+		beforeImg: BrowsAfter,
 		afterImg: BronzerAfter,
-		description: "Bronzer keeps you from getting washed out in photos."
+		description: "Bronzer keeps you from getting washed out in photos.",
+		video: BronzerVideo
 	},
 	{
 		id: "Blush",
 		beforeImg: BronzerAfter,
 		afterImg: BlushAfter,
-		description: "Blush keeps you from getting washed out in flash photos."
+		description: "Blush keeps you from getting washed out in flash photos.",
+		video: BlushVideo
 	},
 	{
 		id: "Highlighter",
 		beforeImg: BlushAfter,
 		afterImg: HighlightAfter,
-		description: "Highlight gives you a bridal glow."
+		description: "Highlight gives you a bridal glow.",
+		video: HighlightVideo
 	},
 	{
 		id: "Peach eyeshadow",
 		beforeImg: HighlightAfter,
 		afterImg: PeachAfter,
-		description: "Peach eyeshadow in crease."
+		description: "Peach eyeshadow in crease.",
+		video: PeachVideo
 	},
 	{
 		id: "Light brown eyeshadow",
 		beforeImg: PeachAfter,
 		afterImg: BeachesAfter,
-		description: "Light brown eyeshadow in crease."
+		description: "Light brown eyeshadow in crease.",
+		video: LightBrownVideo
 	},
 	{
 		id: "Pink eyeshadow",
 		beforeImg: BeachesAfter,
 		afterImg: PinkAfter,
-		description: "Pink eyeshadow in crease."
+		description: "Pink eyeshadow in crease.",
+		video: PinkVideo
+	},
+	{
+		id: "Skin tone eyeshadow",
+		beforeImg: PinkAfter,
+		afterImg: OrbAfter,
+		description: "Skintone eyeshadow under brow",
+		video: OrbVideo
 	},
 	{
 		id: "Darker brown eyeshadow",
-		beforeImg: PinkAfter,
+		beforeImg: OrbAfter,
 		afterImg: TanAfter,
-		description: "Darker brown eyeshadow in outer V."
+		description: "Darker brown eyeshadow in outer V.",
+		video: TanVideo
 	},
 	{
 		id: "Champagne eyeshadow",
 		beforeImg: TanAfter,
 		afterImg: ChampagneAfter,
-		description: "Champagne eyeshadow on lid."
-	},
-	{
-		id: "Highlight eyeshadow",
-		beforeImg: ChampagneAfter,
-		afterImg: ChampagnePopAfter,
-		description: "Highlight eyeshadow on inner corner of eye."
+		description: "Champagne eyeshadow on lid.",
+		video: ChampagneVideo
 	},
 	{
 		id: "Gold eyeshadow",
-		beforeImg: ChampagnePopAfter,
+		beforeImg: ChampagneAfter,
 		afterImg: GoldAfter,
-		description: "Gold eyeshadow on outer half of eyelid."
+		description: "Gold eyeshadow on outer half of eyelid.",
+		video: GoldVideo
+	},
+	{
+		id: "Highlight eyeshadow",
+		beforeImg: GoldAfter,
+		afterImg: ChampagnePopAfter,
+		description: "Highlight eyeshadow on inner corner of eye.",
+		video: ChampagnePopVideo
 	},
 	{
 		id: "Light brown eyeshadow under eye",
-		beforeImg: GoldAfter,
+		beforeImg: ChampagnePopAfter,
 		afterImg: UnderBeachAfter,
-		description: "Light brown eyeshadow outer half of lower eyelid."
+		description: "Light brown eyeshadow outer half of lower eyelid.",
+		video: LightBrownUnderVideo
 	},
 	{
 		id: "Darker brown eyeshadow under eye",
 		beforeImg: UnderBeachAfter,
 		afterImg: UnderTanAfter,
-		description: "Darker brown eyeshadow outer half of lower eyelid."
+		description: "Darker brown eyeshadow outer half of lower eyelid.",
+		video: DarkBrownUnderVideo
 	},
 	{
 		id: "Gel eyeliner",
 		beforeImg: UnderTanAfter,
 		afterImg: BlacktrackAfter,
-		description: "Gel eyeliner to define the eyes."
+		description: "Gel eyeliner to define the eyes.",
+		video: EyelinerVideo
 	},
 	{
 		id: "Black eyeshadow",
 		beforeImg: BlacktrackAfter,
 		afterImg: CarbonAfter,
-		description: "Black eyeshadow over the gel liner to deepen the color and help it last."
+		description: "Black eyeshadow over the gel liner to deepen the color and help it last.",
+		video: CarbonVideo
 	},
 	{
 		id: "Mascara",
 		beforeImg: CarbonAfter,
 		afterImg: MascaraAfter,
-		description: "Waterproof mascara from roots of lashes up."
+		description: "Waterproof mascara from roots of lashes up.",
+		video: MascaraVideo
 	},
 	{
 		id: "Lip Liner",
 		beforeImg: MascaraAfter,
 		afterImg: LinerAfter,
-		description: "Apply lipliner to help lipstick stay longer."
+		description: "Apply lipliner to help lipstick stay longer.",
+		video: LipLinerVideo
 	},
 	{
 		id: "Lipstick",
 		beforeImg: LinerAfter,
 		afterImg: OverallAfter,
-		description: "Lipstick"
+		description: "Lipstick",
+		video: LipstickVideo
 	}
 ]
 
@@ -162,8 +213,14 @@ const FullLook = () => (
 	
 		<BeforeAfter product="overall" beforeImg= {OverallBefore} afterImg={OverallAfter} description="Putting on my bridal game face."/>
 	
-		{steps.map(step => 
-			<BeforeAfter key={step.id} product={step.id} beforeImg= {step.beforeImg} afterImg={step.afterImg} description={step.description}/>
+		{steps.map(step => (
+			<section key={step.id} >
+				<h3 className="FullLook__heading">{step.id}</h3>
+				<BeforeAfter product={step.id} beforeImg= {step.beforeImg} afterImg={step.afterImg} description={step.description}/>
+				<p>{step.description}</p>
+				{step.video ? <step.video /> : ""}
+			</section>
+		)
 		)}
 	</main>
 );

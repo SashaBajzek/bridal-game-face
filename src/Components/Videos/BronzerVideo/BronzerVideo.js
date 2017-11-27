@@ -1,5 +1,5 @@
 import React from 'react';
-import StopMotion from '../StopMotion/StopMotion';
+import StopMotion from '../../StopMotion/StopMotion';
 
 import BronzerVideo1 from './BronzerVideoPhotos/IMG_5874.jpg';
 import BronzerVideo2 from './BronzerVideoPhotos/IMG_5875.jpg';
@@ -38,7 +38,7 @@ const BronzerVideoList = [
 
 const BronzerVideo = () => (
 	<div className="Bronzer Video">
-		<StopMotion photos={ BronzerVideoList } title="Bronzer Step-By-Step" />
+		<StopMotion photos={ BronzerVideoList } title="Where to Apply Bronzer" />
 	</div>
 );
 

@@ -110,6 +110,7 @@ Note that while we're repeating code here, that's necessary as you can't comma-s
 
 @media only screen and (min-width: 480px) {
 	.BeforeAfter {
+		height: 400px;
 		margin: 40px auto;
 		width: 300px;
 	}

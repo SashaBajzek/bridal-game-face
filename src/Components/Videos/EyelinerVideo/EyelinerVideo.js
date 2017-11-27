@@ -1,6 +1,8 @@
 import React from 'react';
-import StopMotion from '../StopMotion/StopMotion';
+import StopMotion from '../../StopMotion/StopMotion';
 
+import EyelinerVideoi from './EyelinerVideoPhotos/IMG_6129.jpg';
+import EyelinerVideoii from './EyelinerVideoPhotos/IMG_6138.jpg';
 import EyelinerVideo1 from './EyelinerVideoPhotos/IMG_6140.jpg';
 import EyelinerVideo2 from './EyelinerVideoPhotos/IMG_6141.jpg';
 import EyelinerVideo3 from './EyelinerVideoPhotos/IMG_6142.jpg';
@@ -40,6 +42,14 @@ import EyelinerVideo36 from './EyelinerVideoPhotos/IMG_6187.jpg';
 import EyelinerVideo37 from './EyelinerVideoPhotos/IMG_6189.jpg';
 
 const EyelinerVideoList = [
+	{
+		photo: EyelinerVideoi,
+		description: "Dip angled brush into gel eyeliner"
+	},
+	{
+		photo: EyelinerVideoii,
+		description: "Dip angled brush into gel eyeliner"
+	},
 	{
 		photo: EyelinerVideo1,
 		description: "Outer half of eye: apply at roots of lashes"

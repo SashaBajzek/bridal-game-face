@@ -1,5 +1,5 @@
 import React from 'react';
-import StopMotion from '../StopMotion/StopMotion';
+import StopMotion from '../../StopMotion/StopMotion';
 
 import LipLinerVideo1 from './LipLinerVideoPhotos/IMG_6226.jpg';
 import LipLinerVideo2 from './LipLinerVideoPhotos/IMG_6227.jpg';

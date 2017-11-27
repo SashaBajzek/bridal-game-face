@@ -53,8 +53,8 @@ header {
 	font-weight: bold;
 }
 
-.Header__menu a:focus,
-.Header__menu a:hover,
+.Header__link:focus,
+.Header__link:hover,
 .Header__link--active {
 	color: #bc4f5e;
 }
@@ -130,18 +130,68 @@ header {
 		font-size: 50px;
 	}
 	
+	/*
+	#cb0e40
+	#bc4f5e
+	#cb5382
+	*/
+	
+	nav {
+		background-color: #cb5382;
+		height: 60px;
+		left: -30px;
+		position: absolute;
+		right: -30px;
+		top: 95px;
+		width: calc(100% + 60px);
+	}
+	
 	.Header__menu {
+		background-color: #cb5382;
 		flex-direction: row;
 		height: 60px;
 		justify-content: space-between;
-		margin: 0;
-		position: static;
+		margin: 0 auto;
+		top: 0;
 		transform: translateX(0); /*Just in case menu toggle is set*/
-		width: 100%;
+		width: calc(100% - 100px);
+	}
+	
+	nav::before {
+		border-right: 30px solid transparent;
+		border-top: 30px solid #a24268;
+		content: "";
+		height: 0;
+		position: absolute;
+		right: 0;
+		top: 100%;
+		width: 0;
+	}
+	
+	nav::after {
+		border-left: 30px solid transparent;
+		border-top: 30px solid #a24268;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 100%;
+		width: 0;
 	}
 	
 	.hamburger {
 		display: none;
+	}
+	
+	.Header__link {
+		line-height: 40px;
+	}
+	
+	.Header__link:focus,
+	.Header__link:hover,
+	.Header__link--active {
+		color: black;
+		text-decoration: underline;
 	}
 	
 }
