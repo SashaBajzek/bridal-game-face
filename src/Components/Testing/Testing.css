@@ -10,9 +10,10 @@
 .Testing__sublist li {
 	align-items: center;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	list-style: none;
-	margin: 30px auto;
+	margin: 55px auto;
 }
 
 .Testing__sublist div {
@@ -25,15 +26,40 @@
 	color: #470a0a;
 	font-weight: bold;
 	text-align: center;
-	width: 30%;
 }
 
 .Testing__sublist div:last-of-type {
 	border: 1px solid #cb5382;
 	box-shadow: 0 0 1em #cb5382;
-	width: 60%;
 }
 
-.Testing__arrow {
+.Testing__sublist .Testing__arrow {
+	height: 36px;
 	font-weight: bold;
+	padding: 10px;
+	transform: rotate(90deg);
+	width: 36px;
+}
+
+
+@media (min-width: 640px) {
+	.Testing__sublist li {
+		flex-direction: row;
+		margin: 30px auto;
+	}
+	
+	.Testing__sublist div:first-of-type {
+		width: 30%;
+	}
+
+	.Testing__sublist div:last-of-type {
+		width: 60%;
+	}
+	
+	.Testing__sublist .Testing__arrow {
+		height: inherit;
+		padding: 15px;
+		transform: rotate(0);
+		width: inherit;
+	}
 }
