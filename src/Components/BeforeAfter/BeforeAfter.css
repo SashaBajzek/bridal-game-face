@@ -1,7 +1,15 @@
 .BeforeAfter {
+	height: calc((100vw - 40px) * 1.33);
 	margin: 10px auto;
+	max-height: 400px;
+	max-width: 300px;
 	text-align: center;
-	width: 200px;
+	width: calc(100vw - 40px);
+}
+
+.BeforeAfter img {
+	height: calc((100vw - 40px) * 1.33);
+	max-height: 400px;
 }
 
 .BeforeAfter__images {
@@ -23,9 +31,10 @@
 	height: 100%;
 	left: -12px;
 	margin: 0;
+	max-width: 324px;
 	position: absolute;
 	top: 0;
-	width: 224px;
+	width: calc(100vw - 40px + 24px);
 	z-index: 1;
 }
 
@@ -42,7 +51,8 @@ Note that while we're repeating code here, that's necessary as you can't comma-s
 .BeforeAfter__image-slider {
   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
 	background: transparent; /* Otherwise white in Chrome */
-  width: 224px; /* Specific width is required for Firefox. */
+	max-width: 324px;
+  width: calc(100vw - 40px + 24px); /* Specific width is required for Firefox. */
 }
 
 .BeforeAfter__image-slider::-webkit-slider-thumb {
@@ -52,7 +62,8 @@ Note that while we're repeating code here, that's necessary as you can't comma-s
 /* I needed to add this to hide the track for Firefox */
 .BeforeAfter__image-slider::-ms-track {
 	cursor: ew-resize;
-  width: 224px;
+  max-width: 324px;
+  width: calc(100vw - 40px + 24px);
   /* Hides the slider so custom styles can be added */
   background: transparent; 
   border-color: transparent;
@@ -61,7 +72,8 @@ Note that while we're repeating code here, that's necessary as you can't comma-s
 
 .BeforeAfter__image-slider::-moz-range-track {
 	cursor: ew-resize;
-  width: 224px;
+  max-width: 324px;
+  width: calc(100vw - 40px + 24px);
   /* Hides the slider so custom styles can be added */
   background: transparent; 
   border-color: transparent;
