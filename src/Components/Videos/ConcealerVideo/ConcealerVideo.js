@@ -22,7 +22,7 @@ const ConcealerVideoList = [
 
 const ConcealerVideo = () => (
 	<div className="Concealer Video">
-		<StopMotion photos={ ConcealerVideoList } title="Concealer" />
+		<StopMotion photos={ ConcealerVideoList } title="Apply Concealer" />
 	</div>
 );
 

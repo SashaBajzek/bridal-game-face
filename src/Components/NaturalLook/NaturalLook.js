@@ -23,13 +23,13 @@ const steps = [
 		id: "Foundation",
 		beforeImg: FoundationBefore,
 		afterImg: FoundationAfter,
-		description: "Foundation evens out skintone and gives a blurred 'airbrush' effect."
+		description: "Foundation evens out your skintone and gives your skin a blurred 'airbrush' effect."
 	},
 	{
 		id: "Concealer",
 		beforeImg: FoundationAfter,
 		afterImg: ConcealerAfter,
-		description: "Concealer brightens dark undereye circles and better covers blemishes."
+		description: "Concealer brightens dark undereye circles and covers blemishes."
 	},
 	{
 		id: "Powder",
@@ -41,7 +41,7 @@ const steps = [
 		id: "Blush",
 		beforeImg: PowderAfter,
 		afterImg: BlushAfter,
-		description: "Blush on top of cheekbones."
+		description: "Blush keeps you from getting washed out in flash photos."
 	},
 	{
 		id: "Bronzer and highlighter",
@@ -59,37 +59,37 @@ const steps = [
 		id: "Brown eyeshadow in crease of eye",
 		beforeImg: BrowsAfter,
 		afterImg: TransitionAfter,
-		description: "Brown eyeshadow in the hollow of your eye."
+		description: "Light brown eyeshadow in crease to add depth to eyes."
 	},
 	{
 		id: "Brown eyeshadow on outer third of eyelid",
 		beforeImg: TransitionAfter,
 		afterImg: OuterAfter,
-		description: "Brown eyeshadow on outer third of eyelid."
+		description: "Brown eyeshadow on outer third of eyelid adds depth to your eyes."
 	},
 	{
 		id: "Champagne eyeshadow on lid",
 		beforeImg: OuterAfter,
 		afterImg: LidAfter,
-		description: "Apply champagne eyeshadow on eyelid."
+		description: "Champagne eyeshadow on the lid brightens your eyes."
 	},
 	{
 		id: "Brown eyeshadow under eye",
 		beforeImg: LidAfter,
 		afterImg: UnderAfter,
-		description: "Brown eyeshadow under eye."
+		description: "Light brown eyeshadow along lower lashline makes your eyes appear bigger."
 	},
 	{
 		id: "Mascara",
 		beforeImg: UnderAfter,
 		afterImg: MascaraAfter,
-		description: "Apply waterproof mascara from roots of lashes to end."
+		description: "Waterproof mascara helps to open up your eyes."
 	},
 	{
 		id: "Lipstick",
 		beforeImg: MascaraAfter,
 		afterImg: LipstickAfter,
-		description: "Lipstick"
+		description: "Lipstick adds an even coloring to your lips"
 	}
 ];
 
@@ -98,7 +98,7 @@ const NaturalLook = () => (
 	<main className="naturalLook">
 		<h2>Natural Bridal Look</h2>
 		<p>Natural Look is the bare minimum for looking polished on your wedding day. It is a great look for those who do not like the look of makeup on their face at all.</p>
-		<h3>Slide or use arrow keys to compare the before and after images</h3>
+		<p>Slide or use arrow keys to compare the before and after images</p>
 	
 		<BeforeAfter product="overall" beforeImg={OverallBefore} afterImg={OverallAfter} description="Putting on my 'natural' bridal game face."/>
 	
@@ -106,7 +106,7 @@ const NaturalLook = () => (
 			<section key={step.id} >
 				<h3 className="NaturalLook__heading">{step.id}</h3>
 				<BeforeAfter product={step.id} beforeImg= {step.beforeImg} afterImg={step.afterImg} description={step.description}/>
-				<p>{step.description}</p>
+				<p className="NaturalLook__description"><span className="NaturalLook__description-title">What it does: </span>{step.description}</p>
 				{step.video ? <step.video /> : ""}
 			</section>
 		)

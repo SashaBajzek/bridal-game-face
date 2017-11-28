@@ -37,7 +37,7 @@ const ChampagnePopVideoList = [
 
 const ChampagnePopVideo = () => (
 	<div className="ChampagnePop Video">
-		<StopMotion photos={ ChampagnePopVideoList } title="Highlight Shade on Inner Corner" />
+		<StopMotion photos={ ChampagnePopVideoList } title="Apply Inner Corner Highlight" />
 	</div>
 );
 

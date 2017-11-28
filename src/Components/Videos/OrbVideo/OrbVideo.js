@@ -28,7 +28,7 @@ const OrbVideoList = [
 
 const OrbVideo = () => (
 	<div className="Orb Video">
-		<StopMotion photos={ OrbVideoList } title="Orb Shade" />
+		<StopMotion photos={ OrbVideoList } title="Skintone Shade" />
 	</div>
 );
 

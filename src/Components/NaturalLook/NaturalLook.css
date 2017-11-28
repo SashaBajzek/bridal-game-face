@@ -3,3 +3,16 @@
 	font-size: 26px;
 	text-align: center;
 }
+
+.NaturalLook__description {
+	color: #808080;
+	font-style: italic;
+}
+
+.NaturalLook__description-title {
+	font-weight: bold;
+}
+
+.NaturalLook .StopMotion__title {
+	font-size: 20px;
+}

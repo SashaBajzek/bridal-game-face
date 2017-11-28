@@ -22,7 +22,7 @@ const BlushVideoList = [
 
 const BlushVideo = () => (
 	<div className="Blush Video">
-		<StopMotion photos={ BlushVideoList } title="Blush" />
+		<StopMotion photos={ BlushVideoList } title="Where to Apply Blush" />
 	</div>
 );
 

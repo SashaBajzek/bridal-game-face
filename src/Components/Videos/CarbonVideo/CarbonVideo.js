@@ -37,7 +37,7 @@ const CarbonVideoList = [
 
 const CarbonVideo = () => (
 	<div className="Carbon Video">
-		<StopMotion photos={ CarbonVideoList } title="Go Over Gel Liner with Black Eyeshadow" />
+		<StopMotion photos={ CarbonVideoList } title="Apply Black Eyeshadow Over Eyeliner" />
 	</div>
 );
 

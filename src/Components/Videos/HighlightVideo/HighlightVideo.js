@@ -28,7 +28,7 @@ const HighlightVideoList = [
 
 const HighlightVideo = () => (
 	<div className="Highlight Video">
-		<StopMotion photos={ HighlightVideoList } title="Highlight" />
+		<StopMotion photos={ HighlightVideoList } title="Where to Apply Highlight" />
 	</div>
 );
 

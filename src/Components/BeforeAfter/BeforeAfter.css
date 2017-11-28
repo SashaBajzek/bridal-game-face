@@ -1,3 +1,9 @@
+/*
+The height and width CSS is rigid and needs refactoring
+The 40px is the body padding
+The 24px is for the slider button
+*/
+
 .BeforeAfter {
 	height: calc((100vw - 40px) * 1.33);
 	margin: 10px auto;

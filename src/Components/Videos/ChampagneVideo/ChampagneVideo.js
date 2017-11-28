@@ -42,7 +42,7 @@ const ChampagneVideoList = [
 
 const ChampagneVideo = () => (
 	<div className="Champagne Video">
-		<StopMotion photos={ ChampagneVideoList } title="Champagne Shade on Lid" />
+		<StopMotion photos={ ChampagneVideoList } title="Apply Champagne Shade on Lid" />
 	</div>
 );
 

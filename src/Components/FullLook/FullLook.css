@@ -3,3 +3,16 @@
 	font-size: 26px;
 	text-align: center;
 }
+
+.FullLook__description {
+	color: #808080;
+	font-style: italic;
+}
+
+.FullLook__description-title {
+	font-weight: bold;
+}
+
+.FullLook .StopMotion__title {
+	font-size: 20px;
+}
