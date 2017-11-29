@@ -1,11 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import HeroImage from './IMG_6843.jpg';
+import HeroFullLook from './F-Overall-After.jpg';
+import NaturalLook from './Finished2.jpg';
 
 const Home = () => (
 	<main className="Home">
-		<div className="hero">
+		<div className="Home__hero">
 			<h1>Congratulations on your wedding!</h1>
+			<div className="Home__hero-images">
+				<Link to="/full-look"><img className="Home__hero-image Home__hero-image--desktop" src={HeroFullLook} alt="Full Makeup Look" /></Link>
+				<img className="Home__hero-image" src={HeroImage} alt="Putting on bridal makeup" />
+				<Link to="/natural-look"><img className="Home__hero-image Home__hero-image--desktop" src={NaturalLook} alt="Natural Makeup Look" /></Link>
+			</div>
 			<h2>Are you ready to put your game face on?</h2>
 		</div>
 		<p>This website is a tool to help you feel confident in your bridal makeup. Your bridal makeup should help you feel like the best version of yourself, not like you look like a completely different person.</p>

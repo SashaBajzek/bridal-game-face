@@ -1,0 +1,33 @@
+.Home__hero {
+	text-align: center;
+}
+
+.Home__hero-images {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.Home__hero-image {
+	display: block;
+	height: calc(400px / 3 * 2);
+	margin: 0 auto;
+	max-width: 200px;
+	width: 90%;
+}
+
+.Home__hero-image--desktop {
+	display: none;
+}
+
+
+@media (min-width: 640px) {
+	.Home__hero-image--desktop {
+		display: inherit;
+	}
+	
+	.Home__hero-image {
+		width: 100%;
+	}
+	
+}
