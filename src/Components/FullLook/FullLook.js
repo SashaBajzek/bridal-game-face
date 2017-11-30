@@ -79,7 +79,7 @@ const steps = [
 		afterImg: BrowsAfter,
 		description: "Filling in brows gives them more definition in flash photos.",
 		video: BrowVideo,
-		procedure: "Brow products come in three 'flavors': powder, pencil and pomade/gel. Powder is the lightest and most natural looking, pencil is second easiest and great for defining your natural shape, and pomade/gel requires the most precision and is great for redefining your brow shape. Tinted brow gel is a hybrid option that works like mascara for your brows, darkening your fine brow hairs to help brows look more full. If you have unruly brows, finishing with a clear brow gel works like hairspray for your brows, locking in the shape after you comb through them."
+		procedure: "Brow products come in three 'flavors': powder, pencil and pomade/gel. Powder is the lightest and most natural looking, pencil is second easiest and great for defining your natural shape, and pomade/gel requires the most precision and is great for redefining your brow shape. Tinted brow gel is a hybrid option that works like mascara for your brows, darkening your fine brow hairs to help brows look more full. If you have unruly brows, finishing with a clear brow gel works like hairspray for your brows, locking in the shape after you comb through them. Start out by combing your brows upwards and outwards. Then fill in your brows following their natural shape, filling in any bald spots or gaps, brushing through with a spooly frequently to blend. A tip for figuring out a good brow shape is to hold a pencil vertically from the side of your nostril to your brows. That should be how far in your brows should go. Next, tilt the pencil so it goes from the side of your nostril to the center of your eye. Where it crosses your brow is where the top of the arch shape should be. Finally, hold the pencil from the side of your nostril to the end of your eye. Where it touches your brow is where the tail of your brow should end."
 	},
 	{
 		id: "Bronzer",
@@ -87,7 +87,7 @@ const steps = [
 		afterImg: BronzerAfter,
 		description: "Bronzer keeps you from getting washed out in photos.",
 		video: BronzerVideo,
-		procedure: "Finding a good bronzer color can be very difficult. Be patient and try many of them! Common problems are bronzer looking too orange or too muddy looking."
+		procedure: "Finding a good bronzer color can be very difficult. Be patient and try many of them! Common problems are bronzer looking too orange or too muddy looking. Choosing an ashy, grey undertoned brown color can help with that. Apply bronzer across your hairline, temples, under your cheekbones, and under your jawline."
 	},
 	{
 		id: "Blush",
