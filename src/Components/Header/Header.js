@@ -29,11 +29,11 @@ class Header extends Component {
 				</button>
 				<nav>
 					<ul className="Header__menu">
-						<li><NavLink exact to="/" className="Header__link" activeClassName="Header__link--active" onClick={this.closeMenu}>Home</NavLink></li>
-						<li><NavLink to="/full-look" className="Header__link" activeClassName="Header__link--active" onClick={this.closeMenu}>Full Look</NavLink></li>
-						<li><NavLink to="/natural-look" className="Header__link" activeClassName="Header__link--active" onClick={this.closeMenu}>Natural Look</NavLink></li>
-						<li><NavLink to="/testing" className="Header__link" activeClassName="Header__link--active" onClick={this.closeMenu}>Testing</NavLink></li>
-						<li><NavLink to="/clean-up" className="Header__link" activeClassName="Header__link--active" onClick={this.closeMenu}>Clean Up</NavLink></li>
+						<li><NavLink exact to="/" className="Header__link" activeClassName="Header__link--active" onClick={this.closeMenu}><span className="Header__underline">Home</span></NavLink></li>
+						<li><NavLink to="/full-look" className="Header__link" activeClassName="Header__link--active" onClick={this.closeMenu}><span className="Header__underline">Full Look</span></NavLink></li>
+						<li><NavLink to="/natural-look" className="Header__link" activeClassName="Header__link--active" onClick={this.closeMenu}><span className="Header__underline">Natural Look</span></NavLink></li>
+						<li><NavLink to="/testing" className="Header__link" activeClassName="Header__link--active" onClick={this.closeMenu}><span className="Header__underline">Testing</span></NavLink></li>
+						<li><NavLink to="/clean-up" className="Header__link" activeClassName="Header__link--active" onClick={this.closeMenu}><span className="Header__underline">Clean Up</span></NavLink></li>
 					</ul>
 				</nav>
 			</header>

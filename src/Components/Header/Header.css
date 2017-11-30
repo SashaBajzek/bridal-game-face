@@ -122,12 +122,13 @@ header {
 
 @media (min-width: 640px) {
 	header {
-		padding: 20px 40px 0;
+		padding: 0 40px;
 		width: 90%;
 	}
 	
 	.Header__heading {
 		font-size: 50px;
+		padding: 10px 0;
 	}
 	
 	/*
@@ -185,13 +186,19 @@ header {
 	
 	.Header__link {
 		line-height: 40px;
+		padding: 20px 10px;
 	}
 	
 	.Header__link:focus,
 	.Header__link:hover,
 	.Header__link--active {
 		color: black;
-		text-decoration: underline;
+	}
+	
+	.Header__link:focus .Header__underline,
+	.Header__link:hover .Header__underline,
+	.Header__link--active  .Header__underline {
+		border-bottom: 2px solid black;
 	}
 	
 }
