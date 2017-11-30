@@ -1,5 +1,10 @@
 .Home__hero {
+	color: #cb0e40;
 	text-align: center;
+}
+
+.Home__hero h2 {
+	text-transform: inherit;
 }
 
 .Home__hero-images {

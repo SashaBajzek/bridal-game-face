@@ -103,7 +103,7 @@ const Testing = () => (
 			</li>
 			<li><strong>How well does your foundation match your neck?</strong> If you buy your foundation for your wedding and then get a tan closer to your day, you will need to adjust your foundation color to match your new skintone. Always check that your foundation matches your neck and blend some foundation down your neck to make sure it is seamless.</li>
 		</ul>
-		<StopMotion photos={photos} />
+		<StopMotion photos={photos}  title="Testing Bridal Makeup"  />
 	</main>
 );
 

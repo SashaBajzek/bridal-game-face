@@ -8,8 +8,10 @@
 	box-sizing: border-box;
 }
 
-html {
+html,
+body {
 	overflow-x: hidden;
+	width: 100%;
 }
 
 body {
@@ -19,8 +21,7 @@ body {
 	margin: 0 auto;
 	max-width: 700px;
 	padding: 20px;
-	position: relative;
-	width: 100%;	
+	position: relative;	
 }
 
 @media only screen and (min-width: 700px) {
