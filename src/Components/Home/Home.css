@@ -21,7 +21,7 @@
 }
 
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
 	.Home__hero-image--desktop {
 		display: inherit;
 	}

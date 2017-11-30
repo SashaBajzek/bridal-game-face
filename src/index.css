@@ -23,7 +23,7 @@ body {
 	width: 100%;	
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 700px) {
 	html {
 		background-image: url(./Photos/Backgrounds/Chalkboard.jpg);
 		background-attachment: fixed;

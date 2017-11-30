@@ -19,7 +19,7 @@ a {
 	text-decoration: none;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
 	main {
 		margin-top: 155px;
 		padding-top: 10px;
