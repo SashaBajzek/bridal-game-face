@@ -2,6 +2,9 @@ import React from 'react';
 import BeforeAfter from '../BeforeAfter/BeforeAfter';
 import './NaturalLook.css';
 
+import HeaderRight from '../../Photos/Backgrounds/HeaderArt-Right.png';
+import HeaderLeft from '../../Photos/Backgrounds/HeaderArt-Left.png';
+
 import OverallBefore from './NaturalLookPhotos/Overall-Before.jpg';
 import OverallAfter from './NaturalLookPhotos/Finished2.jpg';
 import FoundationBefore from './NaturalLookPhotos/Foundation-Before.jpg';
@@ -116,8 +119,12 @@ const NaturalLook = () => (
 	
 		{steps.map(step => (
 			<section key={step.id} >
-				<h3 className="NaturalLook__heading">{step.id}</h3>
-				<BeforeAfter product={step.id} beforeImg= {step.beforeImg} afterImg={step.afterImg} description={step.description}/>
+				<div className="NaturalLook__heading">
+					<img src={HeaderLeft} alt="Left gameplan" />
+					<h3 className="NaturalLook__heading-text">{step.id}</h3>
+					<img src={HeaderRight} alt="Right gameplan" />
+				</div>
+				<BeforeAfter product={step.id} beforeImg={step.beforeImg} afterImg={step.afterImg} description={step.description}/>
 				<p className="NaturalLook__description"><span className="NaturalLook__description-title">What it does: </span>{step.description}</p>
 				<p className="NaturalLook__procedure"><span className="NaturalLook__description-title">Tips for applying: </span>{step.procedure}</p>
 				{step.video ? <step.video /> : ""}

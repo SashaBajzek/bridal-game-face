@@ -120,7 +120,7 @@ header {
 
 
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
 	header {
 		padding: 0 40px;
 		width: 90%;
@@ -130,12 +130,6 @@ header {
 		font-size: 50px;
 		padding: 10px 0;
 	}
-	
-	/*
-	#cb0e40
-	#bc4f5e
-	#cb5382
-	*/
 	
 	nav {
 		background-color: #cb5382;
