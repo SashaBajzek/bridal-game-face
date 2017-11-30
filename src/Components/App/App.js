@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 import Header from '../Header/Header';
 import Home from '../Home/Home';
 import FullLook from '../FullLook/FullLook';
@@ -13,17 +14,19 @@ class App extends Component {
   render() {
     return (
 			<Router>
-				<div>
-					<Header />
+				<ScrollToTop>
+					<div>
+						<Header />
 
-					<Route exact path="/" component={Home} />
-					<Route path="/full-look" component={FullLook} />
-					<Route path="/natural-look" component={NaturalLook} />
-					<Route path="/clean-up" component={CleanUp} />
-					<Route path="/testing" component={Testing} />
-			
-					<Footer />
-				</div>
+						<Route exact path="/" component={Home} />
+						<Route path="/full-look" component={FullLook} />
+						<Route path="/natural-look" component={NaturalLook} />
+						<Route path="/clean-up" component={CleanUp} />
+						<Route path="/testing" component={Testing} />
+
+						<Footer />
+					</div>
+				</ScrollToTop>
 			</Router>
     );
   }
