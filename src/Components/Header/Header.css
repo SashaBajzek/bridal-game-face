@@ -1,5 +1,5 @@
 header {
-	background-color: white;
+	background-color: #cb0e40;
 	left: 0;
 	margin: 0 auto;
 	max-width: 700px;
@@ -11,12 +11,12 @@ header {
 }
 
 .Header__heading {
-	color: #cb0e40;
+	color: white;
 	display: block;
 	font-family: 'MagnoliaScript', 'Helvetica', sans-serif;
 	font-size: 30px;
 	margin: 0 auto;
-	text-align: center;
+	padding-left: 20px;
 }
 
 .Header__menu {
@@ -61,11 +61,11 @@ header {
 
 /* Menu Closed */
 .hamburger {
-	background-color: $white;
-	border-bottom: 3px solid #cb0e40;
+	background-color: #cb0e40;
+	border-bottom: 3px solid white;
 	border-left: none;
 	border-right: none;
-	border-top: 3px solid #cb0e40;
+	border-top: 3px solid white;
 	border-radius: 0;
 	display: block;
 	height: 17px;
@@ -73,14 +73,14 @@ header {
 	position: absolute;
 	right: 20px;
 	text-indent: 100vw; /*Push menu text off of screen*/
-	top: 10px;
+	top: 14px;
 	white-space: nowrap;
 	width: 30px;
 }
 
 .menuClosed .hamburger::before,
 .menuClosed .hamburger::after {
-	background: #cb0e40;
+	background: white;
 	content: "";
 	height: 3px;
 	left: 0px;
@@ -99,7 +99,7 @@ header {
 
 .menuOpen .hamburger:before,
 .menuOpen .hamburger:after {
-	background: #cb0e40;
+	background: white;
 	content: "";
 	height: 3px;
 	left: 0px;
@@ -121,14 +121,18 @@ header {
 
 
 @media (min-width: 700px) {
+
 	header {
+		background-color: white;
 		padding: 0 40px;
 		width: 90%;
 	}
 	
 	.Header__heading {
+		color: #cb0e40;
 		font-size: 50px;
 		padding: 10px 0;
+		text-align: center;
 	}
 	
 	nav {
