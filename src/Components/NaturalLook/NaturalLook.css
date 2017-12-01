@@ -39,6 +39,19 @@
 	font-weight: bold;
 }
 
+.NaturalLook__detail-photos {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+}
+
+.NaturalLook__detail-photo {
+	margin: 10px auto;
+	max-width: 250px;
+	width: 90%;
+}
+
 @media (min-width: 700px) {
 	.NaturalLook__heading-text {
 		max-width: 500px;

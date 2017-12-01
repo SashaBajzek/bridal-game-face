@@ -24,8 +24,24 @@ import MascaraAfter from './NaturalLookPhotos/Mascara-After.jpg';
 import LipstickAfter from './NaturalLookPhotos/Lips-After.jpg';
 
 //Detail Photos
+import FoundationDetails1 from './NaturalLookPhotos/DetailPhotos/Foundation-Detail.jpg';
+import ConcealerDetails1 from './NaturalLookPhotos/DetailPhotos/Concealer-Detail1.jpg'; 
+import ConcealerDetails2 from './NaturalLookPhotos/DetailPhotos/Concealer-Detail2.jpg';
+import PowderDetails1 from './NaturalLookPhotos/DetailPhotos/Powder-Detail1.jpg'; 
+import PowderDetails2 from './NaturalLookPhotos/DetailPhotos/Powder-Detail2.jpg'; 
+import BlushDetails1 from './NaturalLookPhotos/DetailPhotos/Blush-Detail.jpg'; 
+import BrowsDetails1 from './NaturalLookPhotos/DetailPhotos/Brows-Brush.jpg'; 
+import BrowsDetails2 from './NaturalLookPhotos/DetailPhotos/Brows-Fill.jpg'; 
+import OuterDetails1 from './NaturalLookPhotos/DetailPhotos/Shadow-Outer.jpg';
+import LidDetails1 from './NaturalLookPhotos/DetailPhotos/Shadow-Lid1.jpg';
+import LidDetails2 from './NaturalLookPhotos/DetailPhotos/Shadow-Lid3.jpg';
+import MascaraDetails1 from './NaturalLookPhotos/DetailPhotos/Curl.jpg';
+import UnderDetails1 from './NaturalLookPhotos/DetailPhotos/Shadow-Under.jpg';
 
-
+//Detail Videos
+import BronzerHighlightVideo from '../Videos/BronzerHighlightVideo/BronzerHighlightVideo';
+import TransitionVideo from '../Videos/TransitionVideo/TransitionVideo';
+import LipstickNaturalVideo from '../Videos/LipstickNaturalVideo/LipstickNaturalVideo';
 
 const steps = [
 	{
@@ -40,6 +56,12 @@ const steps = [
 				name: "MAKE UP FOR EVER Ultra HD Foundation",
 				link: "https://www.sephora.com/product/ultra-hd-invisible-cover-foundation-P398321?skuId=1708957&icid2=products%20grid:p398321"
 			}
+		],
+		photos: [
+			{
+				name: FoundationDetails1,
+				caption: "Here is my foundation"
+			}
 		]
 	},
 	{
@@ -52,6 +74,16 @@ const steps = [
 			{
 				name: "NARS Radiant Creamy Concealer",
 				link: "https://www.sephora.com/product/radiant-creamy-concealer-P377873?skuId=1478403&icid2=products%20grid:p377873"
+			}
+		],
+		photos: [
+			{
+				name: ConcealerDetails1,
+				caption: "Applying concealer undereyes and on blemishes"
+			},
+			{
+				name: ConcealerDetails2,
+				caption: "Pat in concealer"
 			}
 		]
 	},
@@ -66,6 +98,16 @@ const steps = [
 			{
 				name: "Laura Mercier Translucent Loose Setting Powder",
 				link: "https://www.sephora.com/product/translucent-loose-setting-powder-P109908?skuId=870618"
+			}
+		],
+		photos: [
+			{
+				name: PowderDetails1,
+				caption: "Choose a low silica content setting powder"
+			},
+			{
+				name: PowderDetails2,
+				caption: "Powder under eyes and T-zone"
 			}
 		]
 	},
@@ -83,6 +125,12 @@ const steps = [
 			{
 				name: "MAC Powder Blush in Fleur Power",
 				link: "https://www.maccosmetics.com/product/13842/329/products/makeup/face/blush-bronzer/powder-blush#/shade/Fleur_Power"
+			}
+		],
+		photos: [
+			{
+				name: BlushDetails1,
+				caption: "Choose a peachy pink blush"
 			}
 		]
 	},
@@ -102,7 +150,8 @@ const steps = [
 				name: "Kevyn Aucoin The Celestial Highlighting Powder in Candlelight",
 				link: "https://www.sephora.com/product/the-celestial-powder-P393954?skuId=1697283"
 			}
-		]
+		],
+		video: BronzerHighlightVideo
 	},
 	{
 		id: "Brow pencil",
@@ -115,6 +164,16 @@ const steps = [
 			{
 				name: "Anastasia Beverly Hills Brow Wiz in Soft Brown",
 				link: "https://www.sephora.com/product/brow-wiz-P202633?skuId=1488337"
+			}
+		],
+		photos: [
+			{
+				name: BrowsDetails1,
+				caption: "Comb your brows up and out"
+			},
+			{
+				name: BrowsDetails2,
+				caption: "Fill in brows with a powder or pencil"
 			}
 		]
 	},
@@ -133,7 +192,8 @@ const steps = [
 				name: "Makeup Geek Eyeshadow in Creme Brule",
 				link: "https://www.makeupgeek.com/makeup-geek-eyeshadow-pan-creme-brulee.html"
 			}
-		]
+		],
+		video: TransitionVideo
 	},
 	{
 		id: "Brown eyeshadow on outer third of eyelid",
@@ -145,6 +205,12 @@ const steps = [
 			{
 				name: "Makeup Geek Eyeshadow in Creme Brule",
 				link: "https://www.makeupgeek.com/makeup-geek-eyeshadow-pan-creme-brulee.html"
+			}
+		],
+		photos: [
+			{
+				name: OuterDetails1,
+				caption: "Apply brown on outer third of eyelid"
 			}
 		]
 	},
@@ -159,6 +225,16 @@ const steps = [
 				name: "MAC Eyeshadow in All That Glitters",
 				link: "https://www.maccosmetics.com/product/13840/363/products/makeup/eyes/shadow/eye-shadow#/shade/All_That_Glitters"
 			}
+		],
+		photos: [
+			{
+				name: LidDetails1,
+				caption: "Choose any pink, peach, or champagne shade"
+			},
+			{
+				name: LidDetails2,
+				caption: "Apply color across the lid"
+			}
 		]
 	},
 	{
@@ -171,6 +247,12 @@ const steps = [
 			{
 				name: "Makeup Geek Eyeshadow in Creme Brule",
 				link: "https://www.makeupgeek.com/makeup-geek-eyeshadow-pan-creme-brulee.html"
+			}
+		],
+		photos: [
+			{
+				name: UnderDetails1,
+				caption: "Apply brown shadow on lower lashline"
 			}
 		]
 	},
@@ -185,6 +267,12 @@ const steps = [
 				name: "Kevyn Aucoin The Volume Mascara",
 				link: "https://www.sephora.com/product/the-volume-mascara-P404812?skuId=1067792"
 			}
+		],
+		photos: [
+			{
+				name: MascaraDetails1,
+				caption: "Curl lashes before applying mascara"
+			}
 		]
 	},
 	{
@@ -198,13 +286,20 @@ const steps = [
 				name: "Burberry Kisses Lipstick in English Rose No. 17",
 				link: "https://www.sephora.com/product/burberry-kisses-lipstick-P398985?skuId=1740505"
 			}
-		]
+		],
+		video: LipstickNaturalVideo
 	}
 ];
 
 const BuildProductList = (products) => (
 	products.map(product => (
 		<li key={product.name}><a href={product.link}>{product.name}</a></li>
+	))
+);
+
+const BuildPhotoList = (photos) => (
+	photos.map(photo => (
+		<li key={photo.name}><img src={photo.name} alt={photo.caption} className="NaturalLook__detail-photo"/></li>
 	))
 );
 
@@ -250,6 +345,12 @@ const NaturalLook = () => (
 					<div className="NaturalLook__procedure">
 						<span className="NaturalLook__description-title">Products I Used: </span>
 						<ul>{BuildProductList(step.products)}</ul>
+					</div> : ""}
+
+				{step.photos ? 
+					<div className="NaturalLook__procedure">
+						<span className="NaturalLook__description-title">Photos: </span>
+						<ul className="NaturalLook__detail-photos">{BuildPhotoList(step.photos)}</ul>
 					</div> : ""}
 
 				{step.video ? <step.video /> : ""}
