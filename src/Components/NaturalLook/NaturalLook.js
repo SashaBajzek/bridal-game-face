@@ -2,9 +2,11 @@ import React from 'react';
 import BeforeAfter from '../BeforeAfter/BeforeAfter';
 import './NaturalLook.css';
 
+//Images for headers
 import HeaderRight from '../../Photos/Backgrounds/HeaderArt-Right.png';
 import HeaderLeft from '../../Photos/Backgrounds/HeaderArt-Left.png';
 
+//Before and After Photos
 import OverallBefore from './NaturalLookPhotos/Overall-Before.jpg';
 import OverallAfter from './NaturalLookPhotos/Finished2.jpg';
 import FoundationBefore from './NaturalLookPhotos/Foundation-Before.jpg';
@@ -20,6 +22,10 @@ import LidAfter from './NaturalLookPhotos/Shadow-Lid-After.jpg';
 import UnderAfter from './NaturalLookPhotos/Shadow-Under-After.jpg';
 import MascaraAfter from './NaturalLookPhotos/Mascara-After.jpg';
 import LipstickAfter from './NaturalLookPhotos/Lips-After.jpg';
+
+//Detail Photos
+
+
 
 const steps = [
 	{
@@ -198,7 +204,7 @@ const steps = [
 
 const BuildProductList = (products) => (
 	products.map(product => (
-		<p><a key={product.name} href={product.link}>{product.name}</a></p>
+		<li key={product.name}><a href={product.link}>{product.name}</a></li>
 	))
 );
 
@@ -213,16 +219,39 @@ const NaturalLook = () => (
 		{steps.map(step => (
 			<section key={step.id} >
 				<div className="NaturalLook__heading">
-					<img src={HeaderLeft} alt="Left gameplan" />
+					<div className="NaturalLook__heading-image">
+						<img src={HeaderLeft} alt="" />
+					</div>
 					<h3 className="NaturalLook__heading-text">{step.id}</h3>
-					<img src={HeaderRight} alt="Right gameplan" />
+					<div className="NaturalLook__heading-image">
+						<img src={HeaderRight} alt="" />
+					</div>
 				</div>
+	
 				<BeforeAfter product={step.id} beforeImg={step.beforeImg} afterImg={step.afterImg} description={step.description}/>
-				<p className="NaturalLook__description"><span className="NaturalLook__description-title">What it does: </span>{step.description}</p>
-				{step.choosing ? <p className="NaturalLook__procedure"><span className="NaturalLook__description-title">Tips for choosing a product: </span>{step.choosing}</p> : ""}
-				<p className="NaturalLook__procedure"><span className="NaturalLook__description-title">Tips for applying: </span>{step.procedure}</p>
+	
+				<p className="NaturalLook__description">
+					<span className="NaturalLook__description-title">What it does: </span>
+					{step.description}
+				</p>
+	
+				{step.choosing ? 
+					<p className="NaturalLook__procedure">
+						<span className="NaturalLook__description-title">Tips for choosing a product: </span>
+						{step.choosing}
+					</p> : ""}
+	
+				<p className="NaturalLook__procedure">
+					<span className="NaturalLook__description-title">Tips for applying: </span>
+					{step.procedure}
+				</p>
+	
 				{step.products ? 
-					<p className="FullLook__procedure"><span className="FullLook__description-title">Products I Used: </span>{BuildProductList(step.products)}</p> : ""}
+					<div className="NaturalLook__procedure">
+						<span className="NaturalLook__description-title">Products I Used: </span>
+						<ul>{BuildProductList(step.products)}</ul>
+					</div> : ""}
+
 				{step.video ? <step.video /> : ""}
 			</section>
 		)

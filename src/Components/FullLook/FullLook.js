@@ -2,9 +2,11 @@ import React from 'react';
 import BeforeAfter from '../BeforeAfter/BeforeAfter';
 import './FullLook.css';
 
+//Images for headers
 import HeaderRight from '../../Photos/Backgrounds/HeaderArt-Right.png';
 import HeaderLeft from '../../Photos/Backgrounds/HeaderArt-Left.png';
 
+//Mini Videos
 import ConcealerVideo from '../Videos/ConcealerVideo/ConcealerVideo';
 import HighlightVideo from '../Videos/HighlightVideo/HighlightVideo';
 import BrowVideo from '../Videos/BrowVideo/BrowVideo';
@@ -27,7 +29,7 @@ import MascaraVideo from '../Videos/MascaraVideo/MascaraVideo';
 import LipLinerVideo from '../Videos/LipLinerVideo/LipLinerVideo';
 import LipstickVideo from '../Videos/LipstickVideo/LipstickVideo';
 
-
+//Before and After Photos
 import OverallBefore from "./FullLookPhotos/F-Overall-Before.jpg";
 import OverallAfter from "./FullLookPhotos/F-Overall-After.jpg";
 import FoundationAfter from "./FullLookPhotos/F-Foundation-After.jpg";
@@ -376,7 +378,7 @@ const steps = [
 
 const BuildProductList = (products) => (
 	products.map(product => (
-		<p><a key={product.name} href={product.link}>{product.name}</a></p>
+		<li key={product.name}><a href={product.link}>{product.name}</a></li>
 	))
 );
 
@@ -391,16 +393,39 @@ const FullLook = () => (
 		{steps.map(step => (
 			<section key={step.id} >
 				<div className="FullLook__heading">
-					<img src={HeaderLeft} alt="Left gameplan" />
+					<div className="FullLook__heading-image">
+						<img src={HeaderLeft} alt="" />
+					</div>
 					<h3 className="FullLook__heading-text">{step.id}</h3>
-					<img src={HeaderRight} alt="Right gameplan" />
+					<div className="FullLook__heading-image">
+						<img src={HeaderRight} alt="" />
+					</div>
 				</div>
+	
 				<BeforeAfter product={step.id} beforeImg={step.beforeImg} afterImg={step.afterImg} description={step.description}/>
-				<p className="FullLook__description"><span className="FullLook__description-title">What it does: </span>{step.description}</p>
-				{step.choosing ? <p className="FullLook__procedure"><span className="FullLook__description-title">Tips for choosing a product: </span>{step.choosing}</p> : ""}
-				<p className="FullLook__procedure"><span className="FullLook__description-title">Tips for applying: </span>{step.procedure}</p>
+	
+				<p className="FullLook__description">
+					<span className="FullLook__description-title">What it does: </span>
+					{step.description}
+				</p>
+	
+				{step.choosing ? 
+					<p className="FullLook__procedure">
+						<span className="FullLook__description-title">Tips for choosing a product: </span>
+						{step.choosing}
+					</p> : ""}
+	
+				<p className="FullLook__procedure">
+					<span className="FullLook__description-title">Tips for applying: </span>
+					{step.procedure}
+				</p>
+	
 				{step.products ? 
-					<p className="FullLook__procedure"><span className="FullLook__description-title">Products I Used: </span>{BuildProductList(step.products)}</p> : ""}
+					<div className="FullLook__procedure">
+						<span className="FullLook__description-title">Products I Used: </span>
+						<ul>{BuildProductList(step.products)}</ul>
+					</div> : ""}
+
 				{step.video ? <step.video /> : ""}
 			</section>
 		)
