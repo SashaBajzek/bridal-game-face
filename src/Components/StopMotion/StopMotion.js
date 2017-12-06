@@ -1,16 +1,31 @@
-import React, {Component} from 'react';
+// @flow
+
+import * as React from 'react';
 import './StopMotion.css';
 
 import play from '../../Photos/Icons/Play-Button.svg';
 import pause from '../../Photos/Icons/Pause-Button.svg';
 
-//combine paused and rampUp
+type Props = {
+	photos: Array<{
+		photo: string,
+		description: string}>,
+	title?: string
+};
 
-class StopMotion extends Component {
+type State = {
+	currentItem: number,
+	videoState: string,
+	totalItems: number,
+	intervalId: number
+};
+
+class StopMotion extends React.Component<Props, State> {
 	state = {
 		currentItem: 0,
 		videoState: "paused",
-		totalItems: this.props.photos.length
+		totalItems: this.props.photos.length,
+		intervalId: 0
 	};
 	
 	componentDidMount() {
