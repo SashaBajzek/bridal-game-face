@@ -1,7 +1,4 @@
-
 //Before and After Photos
-import OverallBefore from './NaturalLookPhotos/Overall-Before.jpg';
-import OverallAfter from './NaturalLookPhotos/Finished2.jpg';
 import FoundationBefore from './NaturalLookPhotos/Foundation-Before.jpg';
 import FoundationAfter from './NaturalLookPhotos/Foundation-After.jpg';
 import ConcealerAfter from './NaturalLookPhotos/Concealer-After.jpg';
